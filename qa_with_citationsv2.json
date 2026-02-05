@@ -1,0 +1,1490 @@
+{
+  "input_file": "F:\\pycode\\rag\\normalized_questions_v2.4.json",
+  "rag_demo_dir": "F:\\pycode\\rag\\database",
+  "ppt_index_dir": "dataprocess/data_out/index_ppt",
+  "top_k": 5,
+  "use_topic_prefix": false,
+  "max_split_q_per_candidate": 3,
+  "items": [
+    {
+      "file": "F:\\pycode\\rag\\dataset\\report1\\自学报告-第1周-李致远组.docx",
+      "meta": {
+        "doc_type": "自学报告",
+        "week": 1,
+        "topics": [
+          "数据类型/输入输出",
+          "概述/基础",
+          "函数",
+          "文件"
+        ],
+        "people": {
+          "组长": [
+            "李致远"
+          ],
+          "组员": [
+            "张兆涵",
+            "肖良哲",
+            "陈星雨"
+          ],
+          "姓名": []
+        }
+      },
+      "qa": [
+        {
+          "source_line_no": 4,
+          "sent_no": 0,
+          "raw_text": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+          "context_prev": "肖良哲：建立了基础认知以及学会了核心框架，并且理解相应流程；不清楚头文件以及部分函数和符号的用法及含义",
+          "context_next": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:是什么"
+          ],
+          "in_q_section": true,
+          "normalization": {
+            "is_course_question": true,
+            "normalized_question": "ASCII码是什么？",
+            "split_questions": [
+              "ASCII码是什么？"
+            ],
+            "confidence": 0.9,
+            "topic_hint": [
+              "概述/基础"
+            ],
+            "notes": "纠正了ASCLL为ASCII"
+          },
+          "chosen_queries": [
+            "ASCII码是什么？"
+          ],
+          "rag_list": [
+            {
+              "question": "ASCII码是什么？",
+              "top_k": 5,
+              "hits": [
+                {
+                  "score": 0.6844112873077393,
+                  "idx": 175,
+                  "chunk_id": "ede2de241a26c225",
+                  "doc_id": "55e1863b1139839c_p028",
+                  "meta": {
+                    "file_name": "5(数组).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                    "page_no": 28,
+                    "char_count": 217
+                  },
+                  "source": "PPT:5(数组).pdf#page=28",
+                  "text_snippet": "5.4.3 字符数组和字符串 在C语言中，字符串是存储在字符数组中来处理的。 例如：\"Hello!\" 字符串结束标志:C语言规定字符‘\\0’作为字符串结束标志， ‘\\0’代表ASCII码为0的字符，ASCII码为0的字符是一个空 操作符，该字符既不能在显示器上显示，也不会产生任何 控制操作。 “Hello!”字符串在内存中占用7个字节存储单元。分别存放  ‘H’， ‘e’， ‘l’， ‘l’， ‘o’， ‘ !’和'\\0'。 28"
+                },
+                {
+                  "score": 0.6151291728019714,
+                  "idx": 30,
+                  "chunk_id": "a0c2edf8048685d0",
+                  "doc_id": "7e7f8cc9ee128785_p031",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 31,
+                    "char_count": 272
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=31",
+                  "text_snippet": "6、字符数据在内存中的存储 字符常量赋给一个变量时，内存中并不存放字符本身，而是 存放该字符对应的ASCII码(附录A)。 1、为字符型数据与整型数据之间的转换带来了方便。 2、便于字符数据进行算术运算：C语言允许字符数据与整数 直接进行算术运算、相互赋值,且运算过程中使用ASCII码值。 (例如:大小写转换) 3、但需注意，字符数据占一个字节，int型占4个字节 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.31 31 31 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.5938544869422913,
+                  "idx": 68,
+                  "chunk_id": "7f5387f6374bc055",
+                  "doc_id": "7e7f8cc9ee128785_p069",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 69,
+                    "char_count": 229
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=69",
+                  "text_snippet": "（2）字符输入函数 格式: getchar( ); 功能：从标准输入设备即键盘上输入（一个键的）字符， 函数返回的是字符的ASCII码。 调用：int c；  char c； c=getchar( )； c=getchar( )； putchar(c);  putchar(c)； Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.69 69 69 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.5334789752960205,
+                  "idx": 85,
+                  "chunk_id": "01365706c5a5e32d",
+                  "doc_id": "32d10e7490866224_p011",
+                  "meta": {
+                    "file_name": "3(分支结构).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\3(分支结构).pdf",
+                    "page_no": 11,
+                    "char_count": 310
+                  },
+                  "source": "PPT:3(分支结构).pdf#page=11",
+                  "text_snippet": "例3-5 输入一个字符，判断该字符是否为英文字母。 P37 程序代码如下： #include<stdio.h> void main() {  char ch;  printf(“\\n Please input ch :”);  scanf(“%c”,&ch);  if ( ‘a’<=ch && ch<=’z’ || ‘A’<=ch && ch<=’Z’)  printf(“Yes!\\n”); } 运行结果： Please input ch :m Yes! Lu Gang Lu Gang Lu Gang 2021 2021 2021 11 11 11/36 /36 /36 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.5175327062606812,
+                  "idx": 23,
+                  "chunk_id": "0e5490d329dc1d3f",
+                  "doc_id": "7e7f8cc9ee128785_p024",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 24,
+                    "char_count": 245
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=24",
+                  "text_snippet": "2.常量 常量：程序运行过程中，其值不能改变的量。 C.字符常量（字符）: 两种形式 一般字符常量：用单引号括起来表示: ‘a’ , ‘1’ 转义字符：以“\\”+ASCII码的8进制或16进制形式来表示 例如： ‘a’ 也可用 ‘\\141’ 、 ‘\\x61’表示 ASCII表见附录A ‘\\n’… D.字符串常量 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.24 24 24 程序设计基础 程序设计基础 程序设计基础"
+                }
+              ],
+              "answer": "【简要结论】\n- ASCII码是字符在内存中存储时对应的编码，例如字符常量在内存中存放的是其对应的ASCII码。[S2]\n\n【依据与解释】\n1. 在C语言中，字符数据在内存中存储时，存放的不是字符本身，而是该字符对应的ASCII码。[S2]\n2. ASCII码便于字符与整数之间的转换和运算，例如字符数据可以与整数直接进行算术运算，运算时使用的是其ASCII码值。[S2]\n\n【例子或常见误区】\n- 例子：证据中未提供可引用例子。\n- 误区：证据中未提及常见误区。"
+            }
+          ],
+          "rag": {
+            "question": "ASCII码是什么？",
+            "top_k": 5,
+            "hits": [
+              {
+                "score": 0.6844112873077393,
+                "idx": 175,
+                "chunk_id": "ede2de241a26c225",
+                "doc_id": "55e1863b1139839c_p028",
+                "meta": {
+                  "file_name": "5(数组).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                  "page_no": 28,
+                  "char_count": 217
+                },
+                "source": "PPT:5(数组).pdf#page=28",
+                "text_snippet": "5.4.3 字符数组和字符串 在C语言中，字符串是存储在字符数组中来处理的。 例如：\"Hello!\" 字符串结束标志:C语言规定字符‘\\0’作为字符串结束标志， ‘\\0’代表ASCII码为0的字符，ASCII码为0的字符是一个空 操作符，该字符既不能在显示器上显示，也不会产生任何 控制操作。 “Hello!”字符串在内存中占用7个字节存储单元。分别存放  ‘H’， ‘e’， ‘l’， ‘l’， ‘o’， ‘ !’和'\\0'。 28"
+              },
+              {
+                "score": 0.6151291728019714,
+                "idx": 30,
+                "chunk_id": "a0c2edf8048685d0",
+                "doc_id": "7e7f8cc9ee128785_p031",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 31,
+                  "char_count": 272
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=31",
+                "text_snippet": "6、字符数据在内存中的存储 字符常量赋给一个变量时，内存中并不存放字符本身，而是 存放该字符对应的ASCII码(附录A)。 1、为字符型数据与整型数据之间的转换带来了方便。 2、便于字符数据进行算术运算：C语言允许字符数据与整数 直接进行算术运算、相互赋值,且运算过程中使用ASCII码值。 (例如:大小写转换) 3、但需注意，字符数据占一个字节，int型占4个字节 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.31 31 31 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.5938544869422913,
+                "idx": 68,
+                "chunk_id": "7f5387f6374bc055",
+                "doc_id": "7e7f8cc9ee128785_p069",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 69,
+                  "char_count": 229
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=69",
+                "text_snippet": "（2）字符输入函数 格式: getchar( ); 功能：从标准输入设备即键盘上输入（一个键的）字符， 函数返回的是字符的ASCII码。 调用：int c；  char c； c=getchar( )； c=getchar( )； putchar(c);  putchar(c)； Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.69 69 69 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.5334789752960205,
+                "idx": 85,
+                "chunk_id": "01365706c5a5e32d",
+                "doc_id": "32d10e7490866224_p011",
+                "meta": {
+                  "file_name": "3(分支结构).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\3(分支结构).pdf",
+                  "page_no": 11,
+                  "char_count": 310
+                },
+                "source": "PPT:3(分支结构).pdf#page=11",
+                "text_snippet": "例3-5 输入一个字符，判断该字符是否为英文字母。 P37 程序代码如下： #include<stdio.h> void main() {  char ch;  printf(“\\n Please input ch :”);  scanf(“%c”,&ch);  if ( ‘a’<=ch && ch<=’z’ || ‘A’<=ch && ch<=’Z’)  printf(“Yes!\\n”); } 运行结果： Please input ch :m Yes! Lu Gang Lu Gang Lu Gang 2021 2021 2021 11 11 11/36 /36 /36 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.5175327062606812,
+                "idx": 23,
+                "chunk_id": "0e5490d329dc1d3f",
+                "doc_id": "7e7f8cc9ee128785_p024",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 24,
+                  "char_count": 245
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=24",
+                "text_snippet": "2.常量 常量：程序运行过程中，其值不能改变的量。 C.字符常量（字符）: 两种形式 一般字符常量：用单引号括起来表示: ‘a’ , ‘1’ 转义字符：以“\\”+ASCII码的8进制或16进制形式来表示 例如： ‘a’ 也可用 ‘\\141’ 、 ‘\\x61’表示 ASCII表见附录A ‘\\n’… D.字符串常量 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.24 24 24 程序设计基础 程序设计基础 程序设计基础"
+              }
+            ],
+            "answer": "【简要结论】\n- ASCII码是字符在内存中存储时对应的编码，例如字符常量在内存中存放的是其对应的ASCII码。[S2]\n\n【依据与解释】\n1. 在C语言中，字符数据在内存中存储时，存放的不是字符本身，而是该字符对应的ASCII码。[S2]\n2. ASCII码便于字符与整数之间的转换和运算，例如字符数据可以与整数直接进行算术运算，运算时使用的是其ASCII码值。[S2]\n\n【例子或常见误区】\n- 例子：证据中未提供可引用例子。\n- 误区：证据中未提及常见误区。"
+          }
+        },
+        {
+          "source_line_no": 5,
+          "sent_no": 0,
+          "raw_text": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+          "context_prev": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+          "context_next": "printf括号中的“%d”作用是什么",
+          "triggers": [
+            "CONFUSE:不知道",
+            "IN_Q_SECTION",
+            "QWORD:是什么",
+            "WEAK_HINT"
+          ],
+          "in_q_section": true,
+          "normalization": {
+            "is_course_question": true,
+            "normalized_question": "ASCII码表和转义字符的含义是什么？",
+            "split_questions": [
+              "ASCII码表和转义字符的含义是什么？",
+              "ASCII码表是什么？",
+              "转义字符的含义是什么？",
+              "转义字符\\t的制表位置是什么？"
+            ],
+            "confidence": 0.75,
+            "topic_hint": [
+              "数据类型/输入输出",
+              "概述/基础"
+            ],
+            "notes": "拆分多意图，纠正ASCLL为ASCII"
+          },
+          "chosen_queries": [
+            "ASCII码表和转义字符的含义是什么？",
+            "ASCII码表是什么？",
+            "转义字符\\t的制表位置是什么？"
+          ],
+          "rag_list": [
+            {
+              "question": "ASCII码表和转义字符的含义是什么？",
+              "top_k": 5,
+              "hits": [
+                {
+                  "score": 0.7208305597305298,
+                  "idx": 175,
+                  "chunk_id": "ede2de241a26c225",
+                  "doc_id": "55e1863b1139839c_p028",
+                  "meta": {
+                    "file_name": "5(数组).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                    "page_no": 28,
+                    "char_count": 217
+                  },
+                  "source": "PPT:5(数组).pdf#page=28",
+                  "text_snippet": "5.4.3 字符数组和字符串 在C语言中，字符串是存储在字符数组中来处理的。 例如：\"Hello!\" 字符串结束标志:C语言规定字符‘\\0’作为字符串结束标志， ‘\\0’代表ASCII码为0的字符，ASCII码为0的字符是一个空 操作符，该字符既不能在显示器上显示，也不会产生任何 控制操作。 “Hello!”字符串在内存中占用7个字节存储单元。分别存放  ‘H’， ‘e’， ‘l’， ‘l’， ‘o’， ‘ !’和'\\0'。 28"
+                },
+                {
+                  "score": 0.6825482845306396,
+                  "idx": 30,
+                  "chunk_id": "a0c2edf8048685d0",
+                  "doc_id": "7e7f8cc9ee128785_p031",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 31,
+                    "char_count": 272
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=31",
+                  "text_snippet": "6、字符数据在内存中的存储 字符常量赋给一个变量时，内存中并不存放字符本身，而是 存放该字符对应的ASCII码(附录A)。 1、为字符型数据与整型数据之间的转换带来了方便。 2、便于字符数据进行算术运算：C语言允许字符数据与整数 直接进行算术运算、相互赋值,且运算过程中使用ASCII码值。 (例如:大小写转换) 3、但需注意，字符数据占一个字节，int型占4个字节 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.31 31 31 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6559557318687439,
+                  "idx": 68,
+                  "chunk_id": "7f5387f6374bc055",
+                  "doc_id": "7e7f8cc9ee128785_p069",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 69,
+                    "char_count": 229
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=69",
+                  "text_snippet": "（2）字符输入函数 格式: getchar( ); 功能：从标准输入设备即键盘上输入（一个键的）字符， 函数返回的是字符的ASCII码。 调用：int c；  char c； c=getchar( )； c=getchar( )； putchar(c);  putchar(c)； Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.69 69 69 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.641852617263794,
+                  "idx": 23,
+                  "chunk_id": "0e5490d329dc1d3f",
+                  "doc_id": "7e7f8cc9ee128785_p024",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 24,
+                    "char_count": 245
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=24",
+                  "text_snippet": "2.常量 常量：程序运行过程中，其值不能改变的量。 C.字符常量（字符）: 两种形式 一般字符常量：用单引号括起来表示: ‘a’ , ‘1’ 转义字符：以“\\”+ASCII码的8进制或16进制形式来表示 例如： ‘a’ 也可用 ‘\\141’ 、 ‘\\x61’表示 ASCII表见附录A ‘\\n’… D.字符串常量 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.24 24 24 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.5925868153572083,
+                  "idx": 67,
+                  "chunk_id": "8ebf5c99bdaf6e85",
+                  "doc_id": "7e7f8cc9ee128785_p068",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 68,
+                    "char_count": 306
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=68",
+                  "text_snippet": "2.字符数据的输入输出 （1）字符输出函数 格式: putchar(c); 参数c是一个字符型或整型变量(常量)。 功能：向标准输出设备即显示终端输出一个字符。将变量c所 赋的字符或字符ASCII值，输出到显示器上显示。显示的是字符。 例： int c； char c；  c=97； c=‘a’；  putchar(c)； putchar(c)； 也可输出转义字符：putchar(‘\\101’); A putchar(‘\\n’); Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.68 68 68 程序设计基础 程序设计基础 程序设计基础"
+                }
+              ],
+              "answer": "【简要结论】\n- ASCII码表定义了字符与整数编码的对应关系，字符在内存中以其ASCII码值存储[S2]。转义字符是以反斜杠`\\`开头，用于表示特定字符或ASCII码的字符常量形式[S4]。\n\n【依据与解释】\n1. ASCII码是字符在内存中的存储形式，字符常量赋给变量时，存放的是其对应的ASCII码值，这使得字符型与整型数据可以方便地转换和进行算术运算[S2]。\n2. 转义字符是字符常量的一种形式，它以反斜杠`\\`开头，后接ASCII码的八进制或十六进制形式来表示一个字符，例如`\\141`或`\\x61`表示字符`a`[S4]。\n\n【例子或常见误区】\n- 例子：证据中提供了转义字符的例子，如`\\141`和`\\x61`都表示字符`a`[S4]；`\\0`代表ASCII码为0的字符，用作字符串结束标志[S1]。\n- 误区：证据中未提及关于ASCII码表或转义字符的常见误区。"
+            },
+            {
+              "question": "ASCII码表是什么？",
+              "top_k": 5,
+              "hits": [
+                {
+                  "score": 0.688235878944397,
+                  "idx": 175,
+                  "chunk_id": "ede2de241a26c225",
+                  "doc_id": "55e1863b1139839c_p028",
+                  "meta": {
+                    "file_name": "5(数组).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                    "page_no": 28,
+                    "char_count": 217
+                  },
+                  "source": "PPT:5(数组).pdf#page=28",
+                  "text_snippet": "5.4.3 字符数组和字符串 在C语言中，字符串是存储在字符数组中来处理的。 例如：\"Hello!\" 字符串结束标志:C语言规定字符‘\\0’作为字符串结束标志， ‘\\0’代表ASCII码为0的字符，ASCII码为0的字符是一个空 操作符，该字符既不能在显示器上显示，也不会产生任何 控制操作。 “Hello!”字符串在内存中占用7个字节存储单元。分别存放  ‘H’， ‘e’， ‘l’， ‘l’， ‘o’， ‘ !’和'\\0'。 28"
+                },
+                {
+                  "score": 0.5999367237091064,
+                  "idx": 30,
+                  "chunk_id": "a0c2edf8048685d0",
+                  "doc_id": "7e7f8cc9ee128785_p031",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 31,
+                    "char_count": 272
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=31",
+                  "text_snippet": "6、字符数据在内存中的存储 字符常量赋给一个变量时，内存中并不存放字符本身，而是 存放该字符对应的ASCII码(附录A)。 1、为字符型数据与整型数据之间的转换带来了方便。 2、便于字符数据进行算术运算：C语言允许字符数据与整数 直接进行算术运算、相互赋值,且运算过程中使用ASCII码值。 (例如:大小写转换) 3、但需注意，字符数据占一个字节，int型占4个字节 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.31 31 31 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.5834394693374634,
+                  "idx": 68,
+                  "chunk_id": "7f5387f6374bc055",
+                  "doc_id": "7e7f8cc9ee128785_p069",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 69,
+                    "char_count": 229
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=69",
+                  "text_snippet": "（2）字符输入函数 格式: getchar( ); 功能：从标准输入设备即键盘上输入（一个键的）字符， 函数返回的是字符的ASCII码。 调用：int c；  char c； c=getchar( )； c=getchar( )； putchar(c);  putchar(c)； Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.69 69 69 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.5307070016860962,
+                  "idx": 344,
+                  "chunk_id": "fc65a7c7f0c68afe",
+                  "doc_id": "feaa25aa00589277_p005",
+                  "meta": {
+                    "file_name": "8(结构体共用体2).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\8(结构体共用体2).pdf",
+                    "page_no": 5,
+                    "char_count": 97
+                  },
+                  "source": "PPT:8(结构体共用体2).pdf#page=5",
+                  "text_snippet": "8.6.1 链表 1）链表属于动态数据结构，结点——串在一起形成链表。 2）结点数目无需事先指定，可以临时生成。 3）每个结点有自己的空间，结点间的存储空间无需连续，结点间的串 联由指针来完成。"
+                },
+                {
+                  "score": 0.528831958770752,
+                  "idx": 55,
+                  "chunk_id": "ad13e0356a2ee238",
+                  "doc_id": "7e7f8cc9ee128785_p056",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 56,
+                    "char_count": 264
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=56",
+                  "text_snippet": "数据类型说明字母(自学) %d , i  带符号的十进制整数 %o 无符号八进制 %u 无符号十进制整数 %x 无符号十六进制（小写） %X 无符号十六进制（大写） %c 字符 %s 字符串 %e 科学计数法（小写e） %E 科学计数法（大写E) %f 十进制浮点数 %g 按%e和%f较短的一个输出 %G 按%E和%f较短的一个输出 %% 显示%号 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.56 56 56 程序设计基础 程序设计基础 程序设计基础"
+                }
+              ],
+              "answer": "【简要结论】\n- ASCII码表是一种字符编码标准，它规定了字符与一个整数编码（ASCII码）的对应关系，在C语言中，字符数据在内存中以其对应的ASCII码值存储。[S2]\n\n【依据与解释】\n1. 字符数据在内存中并不存放字符本身，而是存放该字符对应的ASCII码。[S2]\n2. ASCII码为0的字符是‘\\0’，它被用作字符串的结束标志。[S1]\n\n【例子或常见误区】\n- 例子：证据中未提供可引用例子。\n- 误区：证据中未提及常见误区。"
+            },
+            {
+              "question": "转义字符\\t的制表位置是什么？",
+              "top_k": 5,
+              "hits": [
+                {
+                  "score": 0.5720190405845642,
+                  "idx": 177,
+                  "chunk_id": "8a1947f3aac7aac6",
+                  "doc_id": "55e1863b1139839c_p030",
+                  "meta": {
+                    "file_name": "5(数组).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                    "page_no": 30,
+                    "char_count": 355
+                  },
+                  "source": "PPT:5(数组).pdf#page=30",
+                  "text_snippet": "2．字符串的引用 引用整个字符串，采用数组名的形式。多用于字符串输入输出 操作中。 例5-10 从键盘输入一行字符,把其中大写字母转换成小写字母。 #include<stdio.h> void main() { char str[30]; int i;  printf(\"Input a string:\\n\"); scanf(“%s”,str); /*输入一个字符串*/  for(i=0;str[i]!='\\0';i++) /*遍历整个字符串*/ {  if(str[i]>='A’ && str[i]<='Z') /*当前字符是大写字母*/ str[i]=str[i]+32; /*转换为小写字母*/  } printf(\"The changed string is:\\n %s\\n\",str); } 30"
+                },
+                {
+                  "score": 0.5696355700492859,
+                  "idx": 23,
+                  "chunk_id": "0e5490d329dc1d3f",
+                  "doc_id": "7e7f8cc9ee128785_p024",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 24,
+                    "char_count": 245
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=24",
+                  "text_snippet": "2.常量 常量：程序运行过程中，其值不能改变的量。 C.字符常量（字符）: 两种形式 一般字符常量：用单引号括起来表示: ‘a’ , ‘1’ 转义字符：以“\\”+ASCII码的8进制或16进制形式来表示 例如： ‘a’ 也可用 ‘\\141’ 、 ‘\\x61’表示 ASCII表见附录A ‘\\n’… D.字符串常量 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.24 24 24 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.5695990324020386,
+                  "idx": 44,
+                  "chunk_id": "e85d2eec62346aaf",
+                  "doc_id": "7e7f8cc9ee128785_p045",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 45,
+                    "char_count": 172
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=45",
+                  "text_snippet": "b) 赋值表达式中的类型转换（隐示转换） 赋值运算符两侧类型不一致，但都是数值型或字符型 时，在赋值时系统自动进行类型转换，即：将赋值号 右边的类型转换为左边的类型。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.45 45 45 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.5634552240371704,
+                  "idx": 175,
+                  "chunk_id": "ede2de241a26c225",
+                  "doc_id": "55e1863b1139839c_p028",
+                  "meta": {
+                    "file_name": "5(数组).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                    "page_no": 28,
+                    "char_count": 217
+                  },
+                  "source": "PPT:5(数组).pdf#page=28",
+                  "text_snippet": "5.4.3 字符数组和字符串 在C语言中，字符串是存储在字符数组中来处理的。 例如：\"Hello!\" 字符串结束标志:C语言规定字符‘\\0’作为字符串结束标志， ‘\\0’代表ASCII码为0的字符，ASCII码为0的字符是一个空 操作符，该字符既不能在显示器上显示，也不会产生任何 控制操作。 “Hello!”字符串在内存中占用7个字节存储单元。分别存放  ‘H’， ‘e’， ‘l’， ‘l’， ‘o’， ‘ !’和'\\0'。 28"
+                },
+                {
+                  "score": 0.5565083026885986,
+                  "idx": 285,
+                  "chunk_id": "86e8f46053c33acd",
+                  "doc_id": "a4444bc154995b9e_p040",
+                  "meta": {
+                    "file_name": "7(指针1).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\7(指针1).pdf",
+                    "page_no": 40,
+                    "char_count": 408
+                  },
+                  "source": "PPT:7(指针1).pdf#page=40",
+                  "text_snippet": "补充：二维字符数组 #include<stdio.h> #include<string.h> void main() { char str[5][20] = {“China”,”England”,”America”,  “Italy”,”German”}; char s[20]; int i,j;  for(i=0;i<4;i++)  for(j=0;j<4-i;j++)  if(strcmp(str[j],str[j+1])>0)  { strcpy(s,str[j]); strcpy(str[j],str[j+1]);  strcpy(str[j+1],s); } for(i = 0;i < 5;i++)  puts(str[i]); } Gang Lu@ Gang Lu@ Gang Lu@2021 2021 2021 40 40 40/22 /22 /22 程序设计基础 程序设计基础 程序设计基础"
+                }
+              ],
+              "answer": "【简要结论】\n- 证据中未明确说明转义字符 `\\t` 的制表位置。[S1][S2][S3][S4][S5]\n\n【依据与解释】\n1. 提供的证据片段主要讨论了字符串处理、常量定义、类型转换、字符串存储和二维字符数组排序，均未涉及转义字符 `\\t` 的具体制表位置（如制表符宽度、对齐规则等）。[S1][S2][S3][S4][S5]\n\n【例子或常见误区】\n- 例子：证据中未提供可引用例子。\n- 误区：证据中未提及常见误区。"
+            }
+          ],
+          "rag": {
+            "question": "ASCII码表和转义字符的含义是什么？",
+            "top_k": 5,
+            "hits": [
+              {
+                "score": 0.7208305597305298,
+                "idx": 175,
+                "chunk_id": "ede2de241a26c225",
+                "doc_id": "55e1863b1139839c_p028",
+                "meta": {
+                  "file_name": "5(数组).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                  "page_no": 28,
+                  "char_count": 217
+                },
+                "source": "PPT:5(数组).pdf#page=28",
+                "text_snippet": "5.4.3 字符数组和字符串 在C语言中，字符串是存储在字符数组中来处理的。 例如：\"Hello!\" 字符串结束标志:C语言规定字符‘\\0’作为字符串结束标志， ‘\\0’代表ASCII码为0的字符，ASCII码为0的字符是一个空 操作符，该字符既不能在显示器上显示，也不会产生任何 控制操作。 “Hello!”字符串在内存中占用7个字节存储单元。分别存放  ‘H’， ‘e’， ‘l’， ‘l’， ‘o’， ‘ !’和'\\0'。 28"
+              },
+              {
+                "score": 0.6825482845306396,
+                "idx": 30,
+                "chunk_id": "a0c2edf8048685d0",
+                "doc_id": "7e7f8cc9ee128785_p031",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 31,
+                  "char_count": 272
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=31",
+                "text_snippet": "6、字符数据在内存中的存储 字符常量赋给一个变量时，内存中并不存放字符本身，而是 存放该字符对应的ASCII码(附录A)。 1、为字符型数据与整型数据之间的转换带来了方便。 2、便于字符数据进行算术运算：C语言允许字符数据与整数 直接进行算术运算、相互赋值,且运算过程中使用ASCII码值。 (例如:大小写转换) 3、但需注意，字符数据占一个字节，int型占4个字节 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.31 31 31 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6559557318687439,
+                "idx": 68,
+                "chunk_id": "7f5387f6374bc055",
+                "doc_id": "7e7f8cc9ee128785_p069",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 69,
+                  "char_count": 229
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=69",
+                "text_snippet": "（2）字符输入函数 格式: getchar( ); 功能：从标准输入设备即键盘上输入（一个键的）字符， 函数返回的是字符的ASCII码。 调用：int c；  char c； c=getchar( )； c=getchar( )； putchar(c);  putchar(c)； Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.69 69 69 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.641852617263794,
+                "idx": 23,
+                "chunk_id": "0e5490d329dc1d3f",
+                "doc_id": "7e7f8cc9ee128785_p024",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 24,
+                  "char_count": 245
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=24",
+                "text_snippet": "2.常量 常量：程序运行过程中，其值不能改变的量。 C.字符常量（字符）: 两种形式 一般字符常量：用单引号括起来表示: ‘a’ , ‘1’ 转义字符：以“\\”+ASCII码的8进制或16进制形式来表示 例如： ‘a’ 也可用 ‘\\141’ 、 ‘\\x61’表示 ASCII表见附录A ‘\\n’… D.字符串常量 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.24 24 24 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.5925868153572083,
+                "idx": 67,
+                "chunk_id": "8ebf5c99bdaf6e85",
+                "doc_id": "7e7f8cc9ee128785_p068",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 68,
+                  "char_count": 306
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=68",
+                "text_snippet": "2.字符数据的输入输出 （1）字符输出函数 格式: putchar(c); 参数c是一个字符型或整型变量(常量)。 功能：向标准输出设备即显示终端输出一个字符。将变量c所 赋的字符或字符ASCII值，输出到显示器上显示。显示的是字符。 例： int c； char c；  c=97； c=‘a’；  putchar(c)； putchar(c)； 也可输出转义字符：putchar(‘\\101’); A putchar(‘\\n’); Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.68 68 68 程序设计基础 程序设计基础 程序设计基础"
+              }
+            ],
+            "answer": "【简要结论】\n- ASCII码表定义了字符与整数编码的对应关系，字符在内存中以其ASCII码值存储[S2]。转义字符是以反斜杠`\\`开头，用于表示特定字符或ASCII码的字符常量形式[S4]。\n\n【依据与解释】\n1. ASCII码是字符在内存中的存储形式，字符常量赋给变量时，存放的是其对应的ASCII码值，这使得字符型与整型数据可以方便地转换和进行算术运算[S2]。\n2. 转义字符是字符常量的一种形式，它以反斜杠`\\`开头，后接ASCII码的八进制或十六进制形式来表示一个字符，例如`\\141`或`\\x61`表示字符`a`[S4]。\n\n【例子或常见误区】\n- 例子：证据中提供了转义字符的例子，如`\\141`和`\\x61`都表示字符`a`[S4]；`\\0`代表ASCII码为0的字符，用作字符串结束标志[S1]。\n- 误区：证据中未提及关于ASCII码表或转义字符的常见误区。"
+          }
+        },
+        {
+          "source_line_no": 6,
+          "sent_no": 0,
+          "raw_text": "printf括号中的“%d”作用是什么",
+          "context_prev": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+          "context_next": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "triggers": [
+            "IN_Q_SECTION",
+            "QWORD:作用",
+            "WEAK_HINT"
+          ],
+          "in_q_section": true,
+          "normalization": {
+            "is_course_question": true,
+            "normalized_question": "printf函数中格式说明符“%d”的作用是什么？",
+            "split_questions": [
+              "printf函数中格式说明符“%d”的作用是什么？"
+            ],
+            "confidence": 0.95,
+            "topic_hint": [
+              "数据类型/输入输出"
+            ],
+            "notes": "纠正ASCLL为ASCII"
+          },
+          "chosen_queries": [
+            "printf函数中格式说明符“%d”的作用是什么？"
+          ],
+          "rag_list": [
+            {
+              "question": "printf函数中格式说明符“%d”的作用是什么？",
+              "top_k": 5,
+              "hits": [
+                {
+                  "score": 0.7607448697090149,
+                  "idx": 54,
+                  "chunk_id": "8cafec192a3d69d0",
+                  "doc_id": "7e7f8cc9ee128785_p055",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 55,
+                    "char_count": 223
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=55",
+                  "text_snippet": "printf (格式控制或普通字符，输出项表列); printf ( “a=%d x=%f”, a, x); 格式符：%[ - ][ 0][m] [ .n ] 数据类型说明字母 附加格式说明 % 是格式符的 开始标识记号。 描述输出数据的 数据类型和格式 。即格式字符 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.55 55 55 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6906291246414185,
+                  "idx": 62,
+                  "chunk_id": "8cceb0ee3fef01b6",
+                  "doc_id": "7e7f8cc9ee128785_p063",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 63,
+                    "char_count": 272
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=63",
+                  "text_snippet": "格式化输入函数基本格式： scanf (输入格式，输入项表列)； 变量地址 格式符 scanf ( “%d%f ”, &a, &x); 说明： 输入项表列是由若干个变量的地址组成。 输入格式用于规定输入项输入数据的格式。用格式符说明。 格式符：%[l] [m] 数据类型说明字母  其中： 1.数据类型说明字符:d、o、x、c、s、e、f 与printf中用法相同。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.63 63 63 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6711559891700745,
+                  "idx": 162,
+                  "chunk_id": "e5ad5dc41cf081c4",
+                  "doc_id": "55e1863b1139839c_p015",
+                  "meta": {
+                    "file_name": "5(数组).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                    "page_no": 15,
+                    "char_count": 296
+                  },
+                  "source": "PPT:5(数组).pdf#page=15",
+                  "text_snippet": "#include<stdio.h> int main() { int i,flag,k;  int a[10];  printf(\"Enter 10 integers\\n\");  for(i=0;i<10;i++)  scanf(\"%d\",&a[i]);  printf(\"Enter k:\");  scanf(\"%d\",&k);  flag=0; for(i=0;i<10;i++) { if(a[i]==k) /*找到*/  { printf(“下标为%d\",i);  flag=1;  break;   } } if(flag==0) printf(“Not found”); } 15"
+                },
+                {
+                  "score": 0.6669361591339111,
+                  "idx": 60,
+                  "chunk_id": "0ac1d78b7d795776",
+                  "doc_id": "7e7f8cc9ee128785_p061",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 61,
+                    "char_count": 406
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=61",
+                  "text_snippet": "格式符：%[ - ][ 0][m] [ .n ][l] 数据类型说明字母  0 对输出项数据空位置填数字0或空白（空格）。 指定0，填0。不指定0，填空白（空格）。  例:9 int x=456;  printf (“%05d\\n”, x );  printf (“%5d\\n” ,x );  运行结果: 00456  456   - 指定输出项输出数据的输出位置。  缺省，输出项输出数据（字符）的输出位置右边靠齐。  指定“-”时，输出项输出数据（字符）的输出位置左边靠齐。 例:10 printf (“%5s\\n”, “ABCD”);  printf (“%-5s\\n”,“ABCD”);  运行结果: ABCD  ABCD Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.61 61 61 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6504536867141724,
+                  "idx": 63,
+                  "chunk_id": "0239d72dfad85117",
+                  "doc_id": "7e7f8cc9ee128785_p064",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 64,
+                    "char_count": 169
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=64",
+                  "text_snippet": "2.附加的格式说明符： [ l ] 的使用:表示long型精度 仅在输入double型数据时要使用，如下： double a； scanf(“%lf”，&a); Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.64 64 64 程序设计基础 程序设计基础 程序设计基础"
+                }
+              ],
+              "answer": "【简要结论】\n- 在printf函数中，格式说明符“%d”用于描述输出数据的类型，指定以十进制整数形式输出对应的整型数据。[S1]\n\n【依据与解释】\n1. 格式符（如%d）是printf函数中格式控制字符串的一部分，其作用是描述输出数据的类型和格式。[S1]\n2. 【由示例可推知】在printf函数中，当格式控制字符串中包含“%d”时，它会与输出项表列中对应的整型变量（如`a`）匹配，并将该变量的值以十进制整数形式输出。[S1]\n\n【例子或常见误区】\n- 例子：证据中未提供可引用例子。\n- 误区：证据中未提及常见误区。"
+            }
+          ],
+          "rag": {
+            "question": "printf函数中格式说明符“%d”的作用是什么？",
+            "top_k": 5,
+            "hits": [
+              {
+                "score": 0.7607448697090149,
+                "idx": 54,
+                "chunk_id": "8cafec192a3d69d0",
+                "doc_id": "7e7f8cc9ee128785_p055",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 55,
+                  "char_count": 223
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=55",
+                "text_snippet": "printf (格式控制或普通字符，输出项表列); printf ( “a=%d x=%f”, a, x); 格式符：%[ - ][ 0][m] [ .n ] 数据类型说明字母 附加格式说明 % 是格式符的 开始标识记号。 描述输出数据的 数据类型和格式 。即格式字符 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.55 55 55 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6906291246414185,
+                "idx": 62,
+                "chunk_id": "8cceb0ee3fef01b6",
+                "doc_id": "7e7f8cc9ee128785_p063",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 63,
+                  "char_count": 272
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=63",
+                "text_snippet": "格式化输入函数基本格式： scanf (输入格式，输入项表列)； 变量地址 格式符 scanf ( “%d%f ”, &a, &x); 说明： 输入项表列是由若干个变量的地址组成。 输入格式用于规定输入项输入数据的格式。用格式符说明。 格式符：%[l] [m] 数据类型说明字母  其中： 1.数据类型说明字符:d、o、x、c、s、e、f 与printf中用法相同。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.63 63 63 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6711559891700745,
+                "idx": 162,
+                "chunk_id": "e5ad5dc41cf081c4",
+                "doc_id": "55e1863b1139839c_p015",
+                "meta": {
+                  "file_name": "5(数组).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                  "page_no": 15,
+                  "char_count": 296
+                },
+                "source": "PPT:5(数组).pdf#page=15",
+                "text_snippet": "#include<stdio.h> int main() { int i,flag,k;  int a[10];  printf(\"Enter 10 integers\\n\");  for(i=0;i<10;i++)  scanf(\"%d\",&a[i]);  printf(\"Enter k:\");  scanf(\"%d\",&k);  flag=0; for(i=0;i<10;i++) { if(a[i]==k) /*找到*/  { printf(“下标为%d\",i);  flag=1;  break;   } } if(flag==0) printf(“Not found”); } 15"
+              },
+              {
+                "score": 0.6669361591339111,
+                "idx": 60,
+                "chunk_id": "0ac1d78b7d795776",
+                "doc_id": "7e7f8cc9ee128785_p061",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 61,
+                  "char_count": 406
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=61",
+                "text_snippet": "格式符：%[ - ][ 0][m] [ .n ][l] 数据类型说明字母  0 对输出项数据空位置填数字0或空白（空格）。 指定0，填0。不指定0，填空白（空格）。  例:9 int x=456;  printf (“%05d\\n”, x );  printf (“%5d\\n” ,x );  运行结果: 00456  456   - 指定输出项输出数据的输出位置。  缺省，输出项输出数据（字符）的输出位置右边靠齐。  指定“-”时，输出项输出数据（字符）的输出位置左边靠齐。 例:10 printf (“%5s\\n”, “ABCD”);  printf (“%-5s\\n”,“ABCD”);  运行结果: ABCD  ABCD Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.61 61 61 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6504536867141724,
+                "idx": 63,
+                "chunk_id": "0239d72dfad85117",
+                "doc_id": "7e7f8cc9ee128785_p064",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 64,
+                  "char_count": 169
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=64",
+                "text_snippet": "2.附加的格式说明符： [ l ] 的使用:表示long型精度 仅在输入double型数据时要使用，如下： double a； scanf(“%lf”，&a); Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.64 64 64 程序设计基础 程序设计基础 程序设计基础"
+              }
+            ],
+            "answer": "【简要结论】\n- 在printf函数中，格式说明符“%d”用于描述输出数据的类型，指定以十进制整数形式输出对应的整型数据。[S1]\n\n【依据与解释】\n1. 格式符（如%d）是printf函数中格式控制字符串的一部分，其作用是描述输出数据的类型和格式。[S1]\n2. 【由示例可推知】在printf函数中，当格式控制字符串中包含“%d”时，它会与输出项表列中对应的整型变量（如`a`）匹配，并将该变量的值以十进制整数形式输出。[S1]\n\n【例子或常见误区】\n- 例子：证据中未提供可引用例子。\n- 误区：证据中未提及常见误区。"
+          }
+        },
+        {
+          "source_line_no": 7,
+          "sent_no": 1,
+          "raw_text": "int a 中a是变量a？",
+          "context_prev": "printf括号中的“%d”作用是什么",
+          "context_next": "张兆涵：不同的开发环境之间有什么区别？一些数学常量如π，e等，怎么在C语言中表示？Double跟float在C语言中有什么区别？",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION"
+          ],
+          "in_q_section": true,
+          "normalization": {
+            "is_course_question": true,
+            "normalized_question": "在C语言中，int a中的a是变量吗？",
+            "split_questions": [
+              "在C语言中，int a中的a是变量吗？"
+            ],
+            "confidence": 0.9,
+            "topic_hint": [
+              "数据类型/输入输出"
+            ],
+            "notes": "轻量纠错，补充了C语言上下文"
+          },
+          "chosen_queries": [
+            "在C语言中，int a中的a是变量吗？"
+          ],
+          "rag_list": [
+            {
+              "question": "在C语言中，int a中的a是变量吗？",
+              "top_k": 5,
+              "hits": [
+                {
+                  "score": 0.6839841604232788,
+                  "idx": 226,
+                  "chunk_id": "13a4dedbb944db48",
+                  "doc_id": "ea73c3356b75d03a_p008",
+                  "meta": {
+                    "file_name": "6(函数2).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                    "page_no": 8,
+                    "char_count": 197
+                  },
+                  "source": "PPT:6(函数2).pdf#page=8",
+                  "text_snippet": "几点注意： 1）如果外部变量是在源文件中各个函数之前定义，则该源文 件中的各函数都可以使用它，不需额外说明。 int x,y,z; fun1( ) { ...  z=x+y; } fun2( ) { ...  z=x-y; } main( ) { ...  z=x/y; } Lifang Lifang Lifang 2020 2020 2020 8/44 /44 /44 C语言 语言 语言"
+                },
+                {
+                  "score": 0.6689907312393188,
+                  "idx": 21,
+                  "chunk_id": "b39699998937f51f",
+                  "doc_id": "7e7f8cc9ee128785_p022",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 22,
+                    "char_count": 227
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=22",
+                  "text_snippet": "2.1 数据 2.1.1数据的表达： 1. 变量 指程序运行中其值改变的量。 在c语言中变量必须“先定义，后使用”。 1.如何定义各种类型的变量： 格式： 数据类型 标识符； 如： int i;  float j;  char c, d; 书写习惯：变量名通常定义为小写字符。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.22 22 22 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6492602825164795,
+                  "idx": 241,
+                  "chunk_id": "5d3551b861def054",
+                  "doc_id": "ea73c3356b75d03a_p023",
+                  "meta": {
+                    "file_name": "6(函数2).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                    "page_no": 23,
+                    "char_count": 297
+                  },
+                  "source": "PPT:6(函数2).pdf#page=23",
+                  "text_snippet": "代码如下： #include <stdio.h> int gcd(int x, int y) { if(y!=0) return gcd(y, x % y); return x; } int main() { int a, b, g; scanf(“%d%d”,&a,&b); if(a<b)//利用 g 做临时变量，交换 a,b 的值，使 a>=b { g=a;a=b;b=g; } g=gcd(a,b); printf(“最大公约数为%d:”, g); } Lifang Lifang Lifang 2020 2020 2020 23 23 23/44 /44 /44 C语言 语言 语言"
+                },
+                {
+                  "score": 0.6380181908607483,
+                  "idx": 26,
+                  "chunk_id": "35968c8f6b983e3b",
+                  "doc_id": "7e7f8cc9ee128785_p027",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 27,
+                    "char_count": 241
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=27",
+                  "text_snippet": "1）变量名: a; 2）变量的值: a=10; 3）变量在内存中的地址: 01244468H 3、变量的三个属性: 例: int a=10; 部分内存空间 01244468H 01244468H 01244468H a 01244472H a的值 01244476H 0......00000001010 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.27 27 27 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6368196606636047,
+                  "idx": 222,
+                  "chunk_id": "111839525003d532",
+                  "doc_id": "ea73c3356b75d03a_p004",
+                  "meta": {
+                    "file_name": "6(函数2).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                    "page_no": 4,
+                    "char_count": 399
+                  },
+                  "source": "PPT:6(函数2).pdf#page=4",
+                  "text_snippet": "1）当局部变量与全局变量同名时，局部（内部）变量将屏蔽全 局（外部）变量 如： //x、y、z外部变量。 int x=0,y=0,z=0; other( ) { int x=100,y=200;  printf(\"other\\n\");  printf(\"x=%d y=%d z=%d\\n\",x,y,z);  } main( ) { int x=1,y=2,z=3;  printf(\"\\nmain\\n\");  printf(\"x=%d y=%d z=%d\\n\",x,y,z);  other( );  } //x、y内部变量。 //x、y、z内部变量。 main x=1 y=2 z=3 other x=100 y=200 z=0 2）相互独立的两个作用域中的同名变量互不干扰。 Lifang Lifang Lifang 2020 2020 2020 4/44 /44 /44 C语言 语言 语言"
+                }
+              ],
+              "answer": "【简要结论】\n- 在C语言中，`int a`中的`a`是变量，因为它是一个其值可以改变的量，并且符合变量的定义格式。[S2]\n\n【依据与解释】\n1. 变量指程序运行中其值可以改变的量，并且必须“先定义，后使用”。[S2]\n2. 定义变量的格式为“数据类型 标识符;”，例如`int i;`，而`int a`正是这种格式。[S2]\n\n【例子或常见误区】\n- 例子：证据中提供了多个变量定义的例子，如`int i;`、`float j;`、`char c, d;`以及`int a=10;`。[S2][S4]\n- 误区：证据中未提及关于“`int a`中的`a`是否是变量”的常见误区。"
+            }
+          ],
+          "rag": {
+            "question": "在C语言中，int a中的a是变量吗？",
+            "top_k": 5,
+            "hits": [
+              {
+                "score": 0.6839841604232788,
+                "idx": 226,
+                "chunk_id": "13a4dedbb944db48",
+                "doc_id": "ea73c3356b75d03a_p008",
+                "meta": {
+                  "file_name": "6(函数2).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                  "page_no": 8,
+                  "char_count": 197
+                },
+                "source": "PPT:6(函数2).pdf#page=8",
+                "text_snippet": "几点注意： 1）如果外部变量是在源文件中各个函数之前定义，则该源文 件中的各函数都可以使用它，不需额外说明。 int x,y,z; fun1( ) { ...  z=x+y; } fun2( ) { ...  z=x-y; } main( ) { ...  z=x/y; } Lifang Lifang Lifang 2020 2020 2020 8/44 /44 /44 C语言 语言 语言"
+              },
+              {
+                "score": 0.6689907312393188,
+                "idx": 21,
+                "chunk_id": "b39699998937f51f",
+                "doc_id": "7e7f8cc9ee128785_p022",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 22,
+                  "char_count": 227
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=22",
+                "text_snippet": "2.1 数据 2.1.1数据的表达： 1. 变量 指程序运行中其值改变的量。 在c语言中变量必须“先定义，后使用”。 1.如何定义各种类型的变量： 格式： 数据类型 标识符； 如： int i;  float j;  char c, d; 书写习惯：变量名通常定义为小写字符。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.22 22 22 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6492602825164795,
+                "idx": 241,
+                "chunk_id": "5d3551b861def054",
+                "doc_id": "ea73c3356b75d03a_p023",
+                "meta": {
+                  "file_name": "6(函数2).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                  "page_no": 23,
+                  "char_count": 297
+                },
+                "source": "PPT:6(函数2).pdf#page=23",
+                "text_snippet": "代码如下： #include <stdio.h> int gcd(int x, int y) { if(y!=0) return gcd(y, x % y); return x; } int main() { int a, b, g; scanf(“%d%d”,&a,&b); if(a<b)//利用 g 做临时变量，交换 a,b 的值，使 a>=b { g=a;a=b;b=g; } g=gcd(a,b); printf(“最大公约数为%d:”, g); } Lifang Lifang Lifang 2020 2020 2020 23 23 23/44 /44 /44 C语言 语言 语言"
+              },
+              {
+                "score": 0.6380181908607483,
+                "idx": 26,
+                "chunk_id": "35968c8f6b983e3b",
+                "doc_id": "7e7f8cc9ee128785_p027",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 27,
+                  "char_count": 241
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=27",
+                "text_snippet": "1）变量名: a; 2）变量的值: a=10; 3）变量在内存中的地址: 01244468H 3、变量的三个属性: 例: int a=10; 部分内存空间 01244468H 01244468H 01244468H a 01244472H a的值 01244476H 0......00000001010 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.27 27 27 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6368196606636047,
+                "idx": 222,
+                "chunk_id": "111839525003d532",
+                "doc_id": "ea73c3356b75d03a_p004",
+                "meta": {
+                  "file_name": "6(函数2).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                  "page_no": 4,
+                  "char_count": 399
+                },
+                "source": "PPT:6(函数2).pdf#page=4",
+                "text_snippet": "1）当局部变量与全局变量同名时，局部（内部）变量将屏蔽全 局（外部）变量 如： //x、y、z外部变量。 int x=0,y=0,z=0; other( ) { int x=100,y=200;  printf(\"other\\n\");  printf(\"x=%d y=%d z=%d\\n\",x,y,z);  } main( ) { int x=1,y=2,z=3;  printf(\"\\nmain\\n\");  printf(\"x=%d y=%d z=%d\\n\",x,y,z);  other( );  } //x、y内部变量。 //x、y、z内部变量。 main x=1 y=2 z=3 other x=100 y=200 z=0 2）相互独立的两个作用域中的同名变量互不干扰。 Lifang Lifang Lifang 2020 2020 2020 4/44 /44 /44 C语言 语言 语言"
+              }
+            ],
+            "answer": "【简要结论】\n- 在C语言中，`int a`中的`a`是变量，因为它是一个其值可以改变的量，并且符合变量的定义格式。[S2]\n\n【依据与解释】\n1. 变量指程序运行中其值可以改变的量，并且必须“先定义，后使用”。[S2]\n2. 定义变量的格式为“数据类型 标识符;”，例如`int i;`，而`int a`正是这种格式。[S2]\n\n【例子或常见误区】\n- 例子：证据中提供了多个变量定义的例子，如`int i;`、`float j;`、`char c, d;`以及`int a=10;`。[S2][S4]\n- 误区：证据中未提及关于“`int a`中的`a`是否是变量”的常见误区。"
+          }
+        },
+        {
+          "source_line_no": 8,
+          "sent_no": 0,
+          "raw_text": "张兆涵：不同的开发环境之间有什么区别？",
+          "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:区别"
+          ],
+          "in_q_section": true,
+          "normalization": {
+            "is_course_question": true,
+            "normalized_question": "不同的C语言开发环境之间有什么区别？",
+            "split_questions": [
+              "不同的C语言开发环境之间有什么区别？"
+            ],
+            "confidence": 0.75,
+            "topic_hint": [
+              "概述/基础"
+            ],
+            "notes": "补充了C语言上下文"
+          },
+          "chosen_queries": [
+            "不同的C语言开发环境之间有什么区别？"
+          ],
+          "rag_list": [
+            {
+              "question": "不同的C语言开发环境之间有什么区别？",
+              "top_k": 5,
+              "hits": [
+                {
+                  "score": 0.6769216060638428,
+                  "idx": 16,
+                  "chunk_id": "0b185e75ba5f8173",
+                  "doc_id": "7e7f8cc9ee128785_p017",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 17,
+                    "char_count": 343
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=17",
+                  "text_snippet": "二、C语言程序的开发过程（其它语言类似） #include <stdio.h> main() {  float r, l;  printf( “r=“ );  scanf( “%f”,&r );  l = 2*3.14159*r;  printf( “L=%f\\n”,l );  return 0; } 开始 源程序 文件名.c 编辑 修 改 调 试 编译 编译器 有 有错 目标程序文件名.obj 无 库函数和 其他目标 程序 链接 链接器 执行 可执行 程序 文件名.exe 结果正确 正确 不正确 结束 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.17 17 17 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6481921672821045,
+                  "idx": 17,
+                  "chunk_id": "7b9625b3a93f3969",
+                  "doc_id": "7e7f8cc9ee128785_p018",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 18,
+                    "char_count": 226
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=18",
+                  "text_snippet": "集成开发环境 是集源程序编辑、编译、链接、运行与调试于一体、 用菜单 驱动的集成软件开发环境。 v Visual Studio v Dev C++ …… 1) 启动、退出开发环境， 2) 创建、编辑并保存一个Ｃ语言源程序 3) 编译、链接、运行一个源程序文件 4) 查看结果 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.18 18 18 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6141469478607178,
+                  "idx": 245,
+                  "chunk_id": "878ef7133784d18f",
+                  "doc_id": "ea73c3356b75d03a_p027",
+                  "meta": {
+                    "file_name": "6(函数2).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                    "page_no": 27,
+                    "char_count": 358
+                  },
+                  "source": "PPT:6(函数2).pdf#page=27",
+                  "text_snippet": "函数小结 （1）C语言是由一个或多个函数组成,一定有一个主函数。每个函数都是相 互独立、功能单一的模块。因此，C语言是一种模块化程序设计语言。函数有用 户自定义函数和标准库函数。标准库函数由系统提供。 （2）函数的定义格式（参数）、引用和返回值。 （3）程序调用函数的执行过程。 *（4）函数的递归调用。 （5）函数间的通讯方式。 （6）函数间传递数组的方法。 （7）C语言变量的存储类型。 *（8）函数有外部函数和静态函数。外部函数的作用范围是整个程序。静态函数 的作用范围是其定义所在的源文件，即局部于源文件，因此也称其为内部函数。 定义内部函数的目的是使其对其它源文件不可见。 Lifang Lifang Lifang 2020 2020 2020 27 27 27/44 /44 /44 C语言 语言 语言"
+                },
+                {
+                  "score": 0.6130331158638,
+                  "idx": 223,
+                  "chunk_id": "671fd8f0a0edf22e",
+                  "doc_id": "ea73c3356b75d03a_p005",
+                  "meta": {
+                    "file_name": "6(函数2).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                    "page_no": 5,
+                    "char_count": 256
+                  },
+                  "source": "PPT:6(函数2).pdf#page=5",
+                  "text_snippet": "6.6.2 变量的存储类型 C语言变量的存储类型决定了该变量的作用域和生存期。 C语言有四种存储类型，即：  auto自动型。  extern外部型或全局型。  static静态型。  register寄存器型。 在叫法上是这样的，例如： auto int x; 称变量x为自动存储类型的变量，简称自动变量。 static float y; 称变量y为静态存储类型的变量，简称静态变量 Lifang Lifang Lifang 2020 2020 2020 5/44 /44 /44 C语言 语言 语言"
+                },
+                {
+                  "score": 0.6108173131942749,
+                  "idx": 110,
+                  "chunk_id": "fae5ea60e47b8c82",
+                  "doc_id": "e5562f709e51ec5b_p005",
+                  "meta": {
+                    "file_name": "4(循环).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\4(循环).pdf",
+                    "page_no": 5,
+                    "char_count": 187
+                  },
+                  "source": "PPT:4(循环).pdf#page=5",
+                  "text_snippet": "C 语言提供了while、do-while和 for 三种循环语句 for: while： do-while： for (e1;e2;e3 ) do { while ( e ) { s; s; s; } while ( e ); } Lu Gang Lu Gang Lu Gang 2021 2021 2021 4. 4. 4.5 程序设计基础 程序设计基础 程序设计基础"
+                }
+              ],
+              "answer": "【简要结论】\n- 不同的C语言开发环境在集成程度上存在区别，主要分为独立的命令行工具链和集编辑、编译、链接、调试于一体的集成开发环境（IDE）。[S1][S2]\n\n【依据与解释】\n1. 一种开发方式是使用独立的工具，按照“编辑源程序 -> 编译 -> 链接 -> 执行”的流程进行，这通常涉及多个独立的工具或命令行操作。[S1]\n2. 另一种方式是使用集成开发环境（IDE），它将源程序编辑、编译、链接、运行与调试等功能集成在一个菜单驱动的软件环境中，简化了开发流程。[S2]\n\n【例子或常见误区】\n- 例子：证据中给出了Visual Studio和Dev C++作为集成开发环境的例子。[S2]\n- 误区：证据中未提及常见误区。"
+            }
+          ],
+          "rag": {
+            "question": "不同的C语言开发环境之间有什么区别？",
+            "top_k": 5,
+            "hits": [
+              {
+                "score": 0.6769216060638428,
+                "idx": 16,
+                "chunk_id": "0b185e75ba5f8173",
+                "doc_id": "7e7f8cc9ee128785_p017",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 17,
+                  "char_count": 343
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=17",
+                "text_snippet": "二、C语言程序的开发过程（其它语言类似） #include <stdio.h> main() {  float r, l;  printf( “r=“ );  scanf( “%f”,&r );  l = 2*3.14159*r;  printf( “L=%f\\n”,l );  return 0; } 开始 源程序 文件名.c 编辑 修 改 调 试 编译 编译器 有 有错 目标程序文件名.obj 无 库函数和 其他目标 程序 链接 链接器 执行 可执行 程序 文件名.exe 结果正确 正确 不正确 结束 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.17 17 17 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6481921672821045,
+                "idx": 17,
+                "chunk_id": "7b9625b3a93f3969",
+                "doc_id": "7e7f8cc9ee128785_p018",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 18,
+                  "char_count": 226
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=18",
+                "text_snippet": "集成开发环境 是集源程序编辑、编译、链接、运行与调试于一体、 用菜单 驱动的集成软件开发环境。 v Visual Studio v Dev C++ …… 1) 启动、退出开发环境， 2) 创建、编辑并保存一个Ｃ语言源程序 3) 编译、链接、运行一个源程序文件 4) 查看结果 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.18 18 18 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6141469478607178,
+                "idx": 245,
+                "chunk_id": "878ef7133784d18f",
+                "doc_id": "ea73c3356b75d03a_p027",
+                "meta": {
+                  "file_name": "6(函数2).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                  "page_no": 27,
+                  "char_count": 358
+                },
+                "source": "PPT:6(函数2).pdf#page=27",
+                "text_snippet": "函数小结 （1）C语言是由一个或多个函数组成,一定有一个主函数。每个函数都是相 互独立、功能单一的模块。因此，C语言是一种模块化程序设计语言。函数有用 户自定义函数和标准库函数。标准库函数由系统提供。 （2）函数的定义格式（参数）、引用和返回值。 （3）程序调用函数的执行过程。 *（4）函数的递归调用。 （5）函数间的通讯方式。 （6）函数间传递数组的方法。 （7）C语言变量的存储类型。 *（8）函数有外部函数和静态函数。外部函数的作用范围是整个程序。静态函数 的作用范围是其定义所在的源文件，即局部于源文件，因此也称其为内部函数。 定义内部函数的目的是使其对其它源文件不可见。 Lifang Lifang Lifang 2020 2020 2020 27 27 27/44 /44 /44 C语言 语言 语言"
+              },
+              {
+                "score": 0.6130331158638,
+                "idx": 223,
+                "chunk_id": "671fd8f0a0edf22e",
+                "doc_id": "ea73c3356b75d03a_p005",
+                "meta": {
+                  "file_name": "6(函数2).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                  "page_no": 5,
+                  "char_count": 256
+                },
+                "source": "PPT:6(函数2).pdf#page=5",
+                "text_snippet": "6.6.2 变量的存储类型 C语言变量的存储类型决定了该变量的作用域和生存期。 C语言有四种存储类型，即：  auto自动型。  extern外部型或全局型。  static静态型。  register寄存器型。 在叫法上是这样的，例如： auto int x; 称变量x为自动存储类型的变量，简称自动变量。 static float y; 称变量y为静态存储类型的变量，简称静态变量 Lifang Lifang Lifang 2020 2020 2020 5/44 /44 /44 C语言 语言 语言"
+              },
+              {
+                "score": 0.6108173131942749,
+                "idx": 110,
+                "chunk_id": "fae5ea60e47b8c82",
+                "doc_id": "e5562f709e51ec5b_p005",
+                "meta": {
+                  "file_name": "4(循环).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\4(循环).pdf",
+                  "page_no": 5,
+                  "char_count": 187
+                },
+                "source": "PPT:4(循环).pdf#page=5",
+                "text_snippet": "C 语言提供了while、do-while和 for 三种循环语句 for: while： do-while： for (e1;e2;e3 ) do { while ( e ) { s; s; s; } while ( e ); } Lu Gang Lu Gang Lu Gang 2021 2021 2021 4. 4. 4.5 程序设计基础 程序设计基础 程序设计基础"
+              }
+            ],
+            "answer": "【简要结论】\n- 不同的C语言开发环境在集成程度上存在区别，主要分为独立的命令行工具链和集编辑、编译、链接、调试于一体的集成开发环境（IDE）。[S1][S2]\n\n【依据与解释】\n1. 一种开发方式是使用独立的工具，按照“编辑源程序 -> 编译 -> 链接 -> 执行”的流程进行，这通常涉及多个独立的工具或命令行操作。[S1]\n2. 另一种方式是使用集成开发环境（IDE），它将源程序编辑、编译、链接、运行与调试等功能集成在一个菜单驱动的软件环境中，简化了开发流程。[S2]\n\n【例子或常见误区】\n- 例子：证据中给出了Visual Studio和Dev C++作为集成开发环境的例子。[S2]\n- 误区：证据中未提及常见误区。"
+          }
+        },
+        {
+          "source_line_no": 8,
+          "sent_no": 1,
+          "raw_text": "一些数学常量如π，e等，怎么在C语言中表示？",
+          "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:怎么",
+            "WEAK_HINT"
+          ],
+          "in_q_section": true,
+          "normalization": {
+            "is_course_question": true,
+            "normalized_question": "如何在C语言中表示数学常量π和e？",
+            "split_questions": [
+              "如何在C语言中表示数学常量π和e？"
+            ],
+            "confidence": 0.9,
+            "topic_hint": [
+              "数据类型/输入输出"
+            ],
+            "notes": "纠正ASCLL为ASCII"
+          },
+          "chosen_queries": [
+            "如何在C语言中表示数学常量π和e？"
+          ],
+          "rag_list": [
+            {
+              "question": "如何在C语言中表示数学常量π和e？",
+              "top_k": 5,
+              "hits": [
+                {
+                  "score": 0.6377502083778381,
+                  "idx": 25,
+                  "chunk_id": "42b436e55e34367a",
+                  "doc_id": "7e7f8cc9ee128785_p026",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 26,
+                    "char_count": 211
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=26",
+                  "text_snippet": "E.符号常量 前面的整型、实型、字符型常量均为字面常量（直接常量） 符号常量：用一个标识符代表一个常量。 #define PI 3.1415926 main() { printf(“%f”,PI); } 书写习惯：符号常量名通常定义为大写字符。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.26 26 26 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6355816721916199,
+                  "idx": 22,
+                  "chunk_id": "6b84745936557fc3",
+                  "doc_id": "7e7f8cc9ee128785_p023",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 23,
+                    "char_count": 252
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=23",
+                  "text_snippet": "2.常量 常量：程序运行过程中，其值不能改变的量。 1，-2，3 A.整型常量（整数）： 十进制数; 八进制数(以0开头); 十六进制数（以0x开头） B.实型常量（实数）：1.5, -3.2 1）十进制小数形式； 2）指数形式:如：234e2= 2.34e4=2.34104 注意：e之前必须有数字，e后的数据必须为整数。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.23 23 23 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6320720911026001,
+                  "idx": 23,
+                  "chunk_id": "0e5490d329dc1d3f",
+                  "doc_id": "7e7f8cc9ee128785_p024",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 24,
+                    "char_count": 245
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=24",
+                  "text_snippet": "2.常量 常量：程序运行过程中，其值不能改变的量。 C.字符常量（字符）: 两种形式 一般字符常量：用单引号括起来表示: ‘a’ , ‘1’ 转义字符：以“\\”+ASCII码的8进制或16进制形式来表示 例如： ‘a’ 也可用 ‘\\141’ 、 ‘\\x61’表示 ASCII表见附录A ‘\\n’… D.字符串常量 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.24 24 24 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6315412521362305,
+                  "idx": 187,
+                  "chunk_id": "d17fbcfb33e0b3ae",
+                  "doc_id": "55e1863b1139839c_p040",
+                  "meta": {
+                    "file_name": "5(数组).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                    "page_no": 40,
+                    "char_count": 305
+                  },
+                  "source": "PPT:5(数组).pdf#page=40",
+                  "text_snippet": "#include<stdio.h> main() { char c[100]; char num[100], letter[100]; int i=0,n=0,l=0; gets(c); while(c[i]!='\\0'){  if(c[i]>='0’ && c[i]<='9'){  num[n]=c[i];  n++;  }  if(c[i]>'A’ && c[i]<'Z’ || c[i]>'a’ && c[i]<'z'){  letter[l]=c[i];  l++;  }  i++; } num[n]='\\0'; letter[l]='\\0'; puts(num); puts(letter); }"
+                },
+                {
+                  "score": 0.6250426769256592,
+                  "idx": 149,
+                  "chunk_id": "6ba700c6dd8fcf8a",
+                  "doc_id": "55e1863b1139839c_p002",
+                  "meta": {
+                    "file_name": "5(数组).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                    "page_no": 2,
+                    "char_count": 422
+                  },
+                  "source": "PPT:5(数组).pdf#page=2",
+                  "text_snippet": "将30名学生的“C语言程序设计”课程期中考试 成绩输入，计算该课程的平均分。 思考：并求高于平均分的人数？ ……  int sum=0,i,count=0;  float ave;  int a1,a2,……,a30;  scanf(\"%d\",&a1);  scanf(\"%d\",&a2);  ……  scanf(\"%d\",&a30);  sum=a1+a2+……a30;  ave=sum/30;  if(a1>ave) count++; #include<stdio.h> int main() {  int a, i,sum=0;  float ave;  for(i=0;i<30;i++)  {  scanf(\"%d\",&a);  sum+=a;  }  ave=sum/30;  printf(“%f\",ave);  return 0; } ……  if(a30>ave) count++;  printf(“%d”,count);"
+                }
+              ],
+              "answer": "【简要结论】\n- 在C语言中，可以使用`#define`预处理器指令定义符号常量来表示数学常量π，例如 `#define PI 3.1415926` [S1]。证据未提供表示数学常量e的直接方法。\n\n【依据与解释】\n1. 符号常量是使用标识符代表一个常量的方法，可以通过`#define`指令来定义，例如定义圆周率π的符号常量 [S1]。\n2. 证据片段中只给出了定义π的例子，没有提及如何定义自然常数e [S1][S2][S3][S4][S5]。\n\n【例子或常见误区】\n- 例子：证据中提供了定义π的例子：`#define PI 3.1415926`，并在`printf`函数中使用 [S1]。\n- 误区：证据中未提及常见误区。"
+            }
+          ],
+          "rag": {
+            "question": "如何在C语言中表示数学常量π和e？",
+            "top_k": 5,
+            "hits": [
+              {
+                "score": 0.6377502083778381,
+                "idx": 25,
+                "chunk_id": "42b436e55e34367a",
+                "doc_id": "7e7f8cc9ee128785_p026",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 26,
+                  "char_count": 211
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=26",
+                "text_snippet": "E.符号常量 前面的整型、实型、字符型常量均为字面常量（直接常量） 符号常量：用一个标识符代表一个常量。 #define PI 3.1415926 main() { printf(“%f”,PI); } 书写习惯：符号常量名通常定义为大写字符。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.26 26 26 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6355816721916199,
+                "idx": 22,
+                "chunk_id": "6b84745936557fc3",
+                "doc_id": "7e7f8cc9ee128785_p023",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 23,
+                  "char_count": 252
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=23",
+                "text_snippet": "2.常量 常量：程序运行过程中，其值不能改变的量。 1，-2，3 A.整型常量（整数）： 十进制数; 八进制数(以0开头); 十六进制数（以0x开头） B.实型常量（实数）：1.5, -3.2 1）十进制小数形式； 2）指数形式:如：234e2= 2.34e4=2.34104 注意：e之前必须有数字，e后的数据必须为整数。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.23 23 23 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6320720911026001,
+                "idx": 23,
+                "chunk_id": "0e5490d329dc1d3f",
+                "doc_id": "7e7f8cc9ee128785_p024",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 24,
+                  "char_count": 245
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=24",
+                "text_snippet": "2.常量 常量：程序运行过程中，其值不能改变的量。 C.字符常量（字符）: 两种形式 一般字符常量：用单引号括起来表示: ‘a’ , ‘1’ 转义字符：以“\\”+ASCII码的8进制或16进制形式来表示 例如： ‘a’ 也可用 ‘\\141’ 、 ‘\\x61’表示 ASCII表见附录A ‘\\n’… D.字符串常量 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.24 24 24 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6315412521362305,
+                "idx": 187,
+                "chunk_id": "d17fbcfb33e0b3ae",
+                "doc_id": "55e1863b1139839c_p040",
+                "meta": {
+                  "file_name": "5(数组).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                  "page_no": 40,
+                  "char_count": 305
+                },
+                "source": "PPT:5(数组).pdf#page=40",
+                "text_snippet": "#include<stdio.h> main() { char c[100]; char num[100], letter[100]; int i=0,n=0,l=0; gets(c); while(c[i]!='\\0'){  if(c[i]>='0’ && c[i]<='9'){  num[n]=c[i];  n++;  }  if(c[i]>'A’ && c[i]<'Z’ || c[i]>'a’ && c[i]<'z'){  letter[l]=c[i];  l++;  }  i++; } num[n]='\\0'; letter[l]='\\0'; puts(num); puts(letter); }"
+              },
+              {
+                "score": 0.6250426769256592,
+                "idx": 149,
+                "chunk_id": "6ba700c6dd8fcf8a",
+                "doc_id": "55e1863b1139839c_p002",
+                "meta": {
+                  "file_name": "5(数组).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\5(数组).pdf",
+                  "page_no": 2,
+                  "char_count": 422
+                },
+                "source": "PPT:5(数组).pdf#page=2",
+                "text_snippet": "将30名学生的“C语言程序设计”课程期中考试 成绩输入，计算该课程的平均分。 思考：并求高于平均分的人数？ ……  int sum=0,i,count=0;  float ave;  int a1,a2,……,a30;  scanf(\"%d\",&a1);  scanf(\"%d\",&a2);  ……  scanf(\"%d\",&a30);  sum=a1+a2+……a30;  ave=sum/30;  if(a1>ave) count++; #include<stdio.h> int main() {  int a, i,sum=0;  float ave;  for(i=0;i<30;i++)  {  scanf(\"%d\",&a);  sum+=a;  }  ave=sum/30;  printf(“%f\",ave);  return 0; } ……  if(a30>ave) count++;  printf(“%d”,count);"
+              }
+            ],
+            "answer": "【简要结论】\n- 在C语言中，可以使用`#define`预处理器指令定义符号常量来表示数学常量π，例如 `#define PI 3.1415926` [S1]。证据未提供表示数学常量e的直接方法。\n\n【依据与解释】\n1. 符号常量是使用标识符代表一个常量的方法，可以通过`#define`指令来定义，例如定义圆周率π的符号常量 [S1]。\n2. 证据片段中只给出了定义π的例子，没有提及如何定义自然常数e [S1][S2][S3][S4][S5]。\n\n【例子或常见误区】\n- 例子：证据中提供了定义π的例子：`#define PI 3.1415926`，并在`printf`函数中使用 [S1]。\n- 误区：证据中未提及常见误区。"
+          }
+        },
+        {
+          "source_line_no": 8,
+          "sent_no": 2,
+          "raw_text": "Double跟float在C语言中有什么区别？",
+          "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:区别"
+          ],
+          "in_q_section": true,
+          "normalization": {
+            "is_course_question": true,
+            "normalized_question": "C语言中double类型和float类型有什么区别？",
+            "split_questions": [
+              "C语言中double类型和float类型有什么区别？"
+            ],
+            "confidence": 0.95,
+            "topic_hint": [
+              "数据类型/输入输出"
+            ],
+            "notes": "纠正ASCLL为ASCII"
+          },
+          "chosen_queries": [
+            "C语言中double类型和float类型有什么区别？"
+          ],
+          "rag_list": [
+            {
+              "question": "C语言中double类型和float类型有什么区别？",
+              "top_k": 5,
+              "hits": [
+                {
+                  "score": 0.6248366832733154,
+                  "idx": 223,
+                  "chunk_id": "671fd8f0a0edf22e",
+                  "doc_id": "ea73c3356b75d03a_p005",
+                  "meta": {
+                    "file_name": "6(函数2).pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                    "page_no": 5,
+                    "char_count": 256
+                  },
+                  "source": "PPT:6(函数2).pdf#page=5",
+                  "text_snippet": "6.6.2 变量的存储类型 C语言变量的存储类型决定了该变量的作用域和生存期。 C语言有四种存储类型，即：  auto自动型。  extern外部型或全局型。  static静态型。  register寄存器型。 在叫法上是这样的，例如： auto int x; 称变量x为自动存储类型的变量，简称自动变量。 static float y; 称变量y为静态存储类型的变量，简称静态变量 Lifang Lifang Lifang 2020 2020 2020 5/44 /44 /44 C语言 语言 语言"
+                },
+                {
+                  "score": 0.6210662722587585,
+                  "idx": 27,
+                  "chunk_id": "510e605a1de11e6a",
+                  "doc_id": "7e7f8cc9ee128785_p028",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 28,
+                    "char_count": 235
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=28",
+                  "text_snippet": "4、变量在内存中占据一定的存储单元（容器）； 不同类型的变量所占的存储单元大小不同 int 占4个字节，float 占4个字节，char占1个字节 决定了不同的数据类型可以描述不同范围内的数据。 整型有有符号和无符号之分（[signed] int / unsigned int） 溢出的问题！ Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.28 28 28 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6166315078735352,
+                  "idx": 48,
+                  "chunk_id": "bb62dac594f01cf1",
+                  "doc_id": "7e7f8cc9ee128785_p049",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 49,
+                    "char_count": 299
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=49",
+                  "text_snippet": "c) 显示（强制）类型转换：单目运算，优先级比较高 格式：(类型名)表达式; 功能：将表达式的使用类型转换成类型名所标明的数据类型。 例1：float x=3.6; int a; a=(int)x; 注意：在进行强制类型转换时，得到一个所需类型的中间变量， 原来变量的类型不发生变化。上例中 x类型不变 例2：#define PI 3.14159  int a;  a=(int)PI; 结果：a等于3。 PI类型不变。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.49 49 49 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6111446619033813,
+                  "idx": 63,
+                  "chunk_id": "0239d72dfad85117",
+                  "doc_id": "7e7f8cc9ee128785_p064",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 64,
+                    "char_count": 169
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=64",
+                  "text_snippet": "2.附加的格式说明符： [ l ] 的使用:表示long型精度 仅在输入double型数据时要使用，如下： double a； scanf(“%lf”，&a); Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.64 64 64 程序设计基础 程序设计基础 程序设计基础"
+                },
+                {
+                  "score": 0.6029880046844482,
+                  "idx": 58,
+                  "chunk_id": "4d18092f2e5558e5",
+                  "doc_id": "7e7f8cc9ee128785_p059",
+                  "meta": {
+                    "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                    "page_no": 59,
+                    "char_count": 270
+                  },
+                  "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=59",
+                  "text_snippet": "以实数形式输出： %f 将float 或double类型的数据以小数形式输出，系统自动保留6位小数。 例:2 main( )  { float a=1.5;  float b=2;  printf (“%f\\n ”,a+b);  }  3.500000 %e(E) 以指数形式输出。 %g (G)以%e %f 格式中输出长度较短的一种格式输出，不输出无意义的0。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.59 59 59 程序设计基础 程序设计基础 程序设计基础"
+                }
+              ],
+              "answer": "【简要结论】\n- double和float类型的主要区别在于它们通常占用的内存大小不同，这决定了它们能描述的数据范围和精度不同。[S2]\n\n【依据与解释】\n1. 根据证据，float类型占用4个字节的存储单元。[S2]\n2. 证据中未明确说明double类型占用的字节数，因此无法直接比较两者在内存占用上的具体差异。证据仅提及在输入double型数据时需要使用格式说明符 `%lf`。[S4]\n\n【例子或常见误区】\n- 例子：证据中未提供直接比较double和float类型区别的例子。\n- 误区：证据中未提及关于double和float类型的常见误区。"
+            }
+          ],
+          "rag": {
+            "question": "C语言中double类型和float类型有什么区别？",
+            "top_k": 5,
+            "hits": [
+              {
+                "score": 0.6248366832733154,
+                "idx": 223,
+                "chunk_id": "671fd8f0a0edf22e",
+                "doc_id": "ea73c3356b75d03a_p005",
+                "meta": {
+                  "file_name": "6(函数2).pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\6(函数2).pdf",
+                  "page_no": 5,
+                  "char_count": 256
+                },
+                "source": "PPT:6(函数2).pdf#page=5",
+                "text_snippet": "6.6.2 变量的存储类型 C语言变量的存储类型决定了该变量的作用域和生存期。 C语言有四种存储类型，即：  auto自动型。  extern外部型或全局型。  static静态型。  register寄存器型。 在叫法上是这样的，例如： auto int x; 称变量x为自动存储类型的变量，简称自动变量。 static float y; 称变量y为静态存储类型的变量，简称静态变量 Lifang Lifang Lifang 2020 2020 2020 5/44 /44 /44 C语言 语言 语言"
+              },
+              {
+                "score": 0.6210662722587585,
+                "idx": 27,
+                "chunk_id": "510e605a1de11e6a",
+                "doc_id": "7e7f8cc9ee128785_p028",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 28,
+                  "char_count": 235
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=28",
+                "text_snippet": "4、变量在内存中占据一定的存储单元（容器）； 不同类型的变量所占的存储单元大小不同 int 占4个字节，float 占4个字节，char占1个字节 决定了不同的数据类型可以描述不同范围内的数据。 整型有有符号和无符号之分（[signed] int / unsigned int） 溢出的问题！ Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.28 28 28 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6166315078735352,
+                "idx": 48,
+                "chunk_id": "bb62dac594f01cf1",
+                "doc_id": "7e7f8cc9ee128785_p049",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 49,
+                  "char_count": 299
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=49",
+                "text_snippet": "c) 显示（强制）类型转换：单目运算，优先级比较高 格式：(类型名)表达式; 功能：将表达式的使用类型转换成类型名所标明的数据类型。 例1：float x=3.6; int a; a=(int)x; 注意：在进行强制类型转换时，得到一个所需类型的中间变量， 原来变量的类型不发生变化。上例中 x类型不变 例2：#define PI 3.14159  int a;  a=(int)PI; 结果：a等于3。 PI类型不变。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.49 49 49 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6111446619033813,
+                "idx": 63,
+                "chunk_id": "0239d72dfad85117",
+                "doc_id": "7e7f8cc9ee128785_p064",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 64,
+                  "char_count": 169
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=64",
+                "text_snippet": "2.附加的格式说明符： [ l ] 的使用:表示long型精度 仅在输入double型数据时要使用，如下： double a； scanf(“%lf”，&a); Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.64 64 64 程序设计基础 程序设计基础 程序设计基础"
+              },
+              {
+                "score": 0.6029880046844482,
+                "idx": 58,
+                "chunk_id": "4d18092f2e5558e5",
+                "doc_id": "7e7f8cc9ee128785_p059",
+                "meta": {
+                  "file_name": "1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "file_path": "F:\\pycode\\rag\\dataset\\ppt\\1、2（概述&基本程序设计：数据&运算&输入输出）.pdf",
+                  "page_no": 59,
+                  "char_count": 270
+                },
+                "source": "PPT:1、2（概述&基本程序设计：数据&运算&输入输出）.pdf#page=59",
+                "text_snippet": "以实数形式输出： %f 将float 或double类型的数据以小数形式输出，系统自动保留6位小数。 例:2 main( )  { float a=1.5;  float b=2;  printf (“%f\\n ”,a+b);  }  3.500000 %e(E) 以指数形式输出。 %g (G)以%e %f 格式中输出长度较短的一种格式输出，不输出无意义的0。 Lu Gang Lu Gang Lu Gang  2021  2021  2021 1（概述） （概述） （概述）.59 59 59 程序设计基础 程序设计基础 程序设计基础"
+              }
+            ],
+            "answer": "【简要结论】\n- double和float类型的主要区别在于它们通常占用的内存大小不同，这决定了它们能描述的数据范围和精度不同。[S2]\n\n【依据与解释】\n1. 根据证据，float类型占用4个字节的存储单元。[S2]\n2. 证据中未明确说明double类型占用的字节数，因此无法直接比较两者在内存占用上的具体差异。证据仅提及在输入double型数据时需要使用格式说明符 `%lf`。[S4]\n\n【例子或常见误区】\n- 例子：证据中未提供直接比较double和float类型区别的例子。\n- 误区：证据中未提及关于double和float类型的常见误区。"
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_candidates": 7,
+    "answered_queries": 9,
+    "avg_queries_per_candidate": 1.2857142857142858
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "summary": {
+    "total_candidates": 7,
+    "kept_questions": 0,
+    "kept_rate": 0.0
+  },
+  "results": [
+    {
+      "file": "F:\\pycode\\rag\\dataset\\report1\\自学报告-第1周-刘思扬组.docx",
+      "meta": {
+        "doc_type": "自学报告",
+        "week": 1,
+        "topics": [
+          "数据类型/输入输出",
+          "概述/基础",
+          "函数",
+          "指针"
+        ],
+        "people": {
+          "组长": [
+            "刘思扬"
+          ],
+          "组员": [
+            "夏艺轩",
+            "康红梅",
+            "何子萱"
+          ],
+          "姓名": []
+        }
+      },
+      "normalized": [
+        {
+          "source_line_no": 25,
+          "sent_no": 0,
+          "raw_text": "1.十六进制具体是如何表示的",
+          "context_prev": "自学心得或疑问",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "IN_Q_SECTION",
+            "MARKER:EXPLICIT",
+            "QWORD:如何"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": true,
+            "normalized_question": "在C语言中，十六进制数是如何表示的？",
+            "confidence": 0.9,
+            "topic_hint": [
+              "数据类型/输入输出"
+            ],
+            "notes": "涉及数值表示方式"
+          }
+        }
+      ]
+    },
+    {
+      "file": "F:\\pycode\\rag\\dataset\\report1\\自学报告-第1周-李致远组.docx",
+      "meta": {
+        "doc_type": null,
+        "week": null,
+        "topics": [],
+        "people": {}
+      },
+      "normalized": [
+        {
+          "source_line_no": 4,
+          "sent_no": 0,
+          "raw_text": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+          "context_prev": "肖良哲：建立了基础认知以及学会了核心框架，并且理解相应流程；不清楚头文件以及部分函数和符号的用法及含义",
+          "context_next": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:是什么"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": false,
+            "normalized_question": null,
+            "confidence": 0.0,
+            "topic_hint": [],
+            "notes": "failed:Missing DEEPS"
+          }
+        },
+        {
+          "source_line_no": 5,
+          "sent_no": 0,
+          "raw_text": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+          "context_prev": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+          "context_next": "printf括号中的“%d”作用是什么",
+          "triggers": [
+            "CONFUSE:不知道",
+            "IN_Q_SECTION",
+            "QWORD:是什么",
+            "WEAK_HINT"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": false,
+            "normalized_question": null,
+            "confidence": 0.0,
+            "topic_hint": [],
+            "notes": "failed:Missing DEEPS"
+          }
+        },
+        {
+          "source_line_no": 6,
+          "sent_no": 0,
+          "raw_text": "printf括号中的“%d”作用是什么",
+          "context_prev": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+          "context_next": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "triggers": [
+            "IN_Q_SECTION",
+            "QWORD:作用",
+            "WEAK_HINT"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": false,
+            "normalized_question": null,
+            "confidence": 0.0,
+            "topic_hint": [],
+            "notes": "failed:Missing DEEPS"
+          }
+        },
+        {
+          "source_line_no": 7,
+          "sent_no": 1,
+          "raw_text": "int a 中a是变量a？",
+          "context_prev": "printf括号中的“%d”作用是什么",
+          "context_next": "张兆涵：不同的开发环境之间有什么区别？一些数学常量如π，e等，怎么在C语言中表示？Double跟float在C语言中有什么区别？",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": false,
+            "normalized_question": null,
+            "confidence": 0.0,
+            "topic_hint": [],
+            "notes": "failed:Missing DEEPS"
+          }
+        },
+        {
+          "source_line_no": 8,
+          "sent_no": 0,
+          "raw_text": "张兆涵：不同的开发环境之间有什么区别？",
+          "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:区别"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": false,
+            "normalized_question": null,
+            "confidence": 0.0,
+            "topic_hint": [],
+            "notes": "failed:Missing DEEPS"
+          }
+        },
+        {
+          "source_line_no": 8,
+          "sent_no": 1,
+          "raw_text": "一些数学常量如π，e等，怎么在C语言中表示？",
+          "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:怎么",
+            "WEAK_HINT"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": false,
+            "normalized_question": null,
+            "confidence": 0.0,
+            "topic_hint": [],
+            "notes": "failed:Missing DEEPS"
+          }
+        },
+        {
+          "source_line_no": 8,
+          "sent_no": 2,
+          "raw_text": "Double跟float在C语言中有什么区别？",
+          "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:区别"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": false,
+            "normalized_question": null,
+            "confidence": 0.0,
+            "topic_hint": [],
+            "notes": "failed:Missing DEEPS"
+          }
+        }
+      ]
+    }
+  ]
+}

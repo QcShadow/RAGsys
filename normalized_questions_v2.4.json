@@ -1,0 +1,215 @@
+{
+  "summary": {
+    "total_candidates": 7,
+    "kept_questions": 7,
+    "kept_rate": 1.0
+  },
+  "results": [
+    {
+      "file": "F:\\pycode\\rag\\dataset\\report1\\自学报告-第1周-李致远组.docx",
+      "meta": {
+        "doc_type": "自学报告",
+        "week": 1,
+        "topics": [
+          "数据类型/输入输出",
+          "概述/基础",
+          "函数",
+          "文件"
+        ],
+        "people": {
+          "组长": [
+            "李致远"
+          ],
+          "组员": [
+            "张兆涵",
+            "肖良哲",
+            "陈星雨"
+          ],
+          "姓名": []
+        }
+      },
+      "normalized": [
+        {
+          "source_line_no": 4,
+          "sent_no": 0,
+          "raw_text": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+          "context_prev": "肖良哲：建立了基础认知以及学会了核心框架，并且理解相应流程；不清楚头文件以及部分函数和符号的用法及含义",
+          "context_next": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:是什么"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": true,
+            "normalized_question": "ASCII码是什么？",
+            "split_questions": [
+              "ASCII码是什么？"
+            ],
+            "confidence": 0.9,
+            "topic_hint": [
+              "概述/基础"
+            ],
+            "notes": "纠正了ASCLL为ASCII"
+          }
+        },
+        {
+          "source_line_no": 5,
+          "sent_no": 0,
+          "raw_text": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+          "context_prev": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+          "context_next": "printf括号中的“%d”作用是什么",
+          "triggers": [
+            "CONFUSE:不知道",
+            "IN_Q_SECTION",
+            "QWORD:是什么",
+            "WEAK_HINT"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": true,
+            "normalized_question": "ASCII码表和转义字符的含义是什么？",
+            "split_questions": [
+              "ASCII码表和转义字符的含义是什么？",
+              "ASCII码表是什么？",
+              "转义字符的含义是什么？",
+              "转义字符\\t的制表位置是什么？"
+            ],
+            "confidence": 0.75,
+            "topic_hint": [
+              "数据类型/输入输出",
+              "概述/基础"
+            ],
+            "notes": "拆分多意图，纠正ASCLL为ASCII"
+          }
+        },
+        {
+          "source_line_no": 6,
+          "sent_no": 0,
+          "raw_text": "printf括号中的“%d”作用是什么",
+          "context_prev": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+          "context_next": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "triggers": [
+            "IN_Q_SECTION",
+            "QWORD:作用",
+            "WEAK_HINT"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": true,
+            "normalized_question": "printf函数中格式说明符“%d”的作用是什么？",
+            "split_questions": [
+              "printf函数中格式说明符“%d”的作用是什么？"
+            ],
+            "confidence": 0.95,
+            "topic_hint": [
+              "数据类型/输入输出"
+            ],
+            "notes": "纠正ASCLL为ASCII"
+          }
+        },
+        {
+          "source_line_no": 7,
+          "sent_no": 1,
+          "raw_text": "int a 中a是变量a？",
+          "context_prev": "printf括号中的“%d”作用是什么",
+          "context_next": "张兆涵：不同的开发环境之间有什么区别？一些数学常量如π，e等，怎么在C语言中表示？Double跟float在C语言中有什么区别？",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": true,
+            "normalized_question": "在C语言中，int a中的a是变量吗？",
+            "split_questions": [
+              "在C语言中，int a中的a是变量吗？"
+            ],
+            "confidence": 0.9,
+            "topic_hint": [
+              "数据类型/输入输出"
+            ],
+            "notes": "轻量纠错，补充了C语言上下文"
+          }
+        },
+        {
+          "source_line_no": 8,
+          "sent_no": 0,
+          "raw_text": "张兆涵：不同的开发环境之间有什么区别？",
+          "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:区别"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": true,
+            "normalized_question": "不同的C语言开发环境之间有什么区别？",
+            "split_questions": [
+              "不同的C语言开发环境之间有什么区别？"
+            ],
+            "confidence": 0.75,
+            "topic_hint": [
+              "概述/基础"
+            ],
+            "notes": "补充了C语言上下文"
+          }
+        },
+        {
+          "source_line_no": 8,
+          "sent_no": 1,
+          "raw_text": "一些数学常量如π，e等，怎么在C语言中表示？",
+          "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:怎么",
+            "WEAK_HINT"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": true,
+            "normalized_question": "如何在C语言中表示数学常量π和e？",
+            "split_questions": [
+              "如何在C语言中表示数学常量π和e？"
+            ],
+            "confidence": 0.9,
+            "topic_hint": [
+              "数据类型/输入输出"
+            ],
+            "notes": "纠正ASCLL为ASCII"
+          }
+        },
+        {
+          "source_line_no": 8,
+          "sent_no": 2,
+          "raw_text": "Double跟float在C语言中有什么区别？",
+          "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+          "context_next": "自学照片（截图）",
+          "triggers": [
+            "HAS_QUESTION_MARK",
+            "IN_Q_SECTION",
+            "QWORD:区别"
+          ],
+          "in_q_section": true,
+          "llm": {
+            "is_course_question": true,
+            "normalized_question": "C语言中double类型和float类型有什么区别？",
+            "split_questions": [
+              "C语言中double类型和float类型有什么区别？"
+            ],
+            "confidence": 0.95,
+            "topic_hint": [
+              "数据类型/输入输出"
+            ],
+            "notes": "纠正ASCLL为ASCII"
+          }
+        }
+      ]
+    }
+  ]
+}

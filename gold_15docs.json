@@ -1,0 +1,246 @@
+[
+  {
+    "filename": "自学报告-第1周-XX组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第1周-XX组.docx-G01",
+        "text": "对二进制、十进制、八进制、十六进制的换算不懂",
+        "raw_text": "对二进制、十进制、八进制、十六进制的换算不懂"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第1周-李致远组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G01",
+        "text": "不清楚头文件以及部分函数和符号的用法及含义",
+        "raw_text": "不清楚头文件以及部分函数和符号的用法及含义"
+      },
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G02",
+        "text": "ASCII码是什么？",
+        "raw_text": "ASCLL码是什么？"
+      },
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G03",
+        "text": "不知道ASCII码表",
+        "raw_text": "不知道ASCLL码表"
+      },
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G04",
+        "text": "转义字符的含义不明确",
+        "raw_text": "转义字符的含义不明确"
+      },
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G05",
+        "text": "\\t制表位置是什么？",
+        "raw_text": "\\t 制表位置是什么"
+      },
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G06",
+        "text": "printf括号中的“%d”作用是什么？",
+        "raw_text": "printf括号中的“%d”作用是什么"
+      },
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G07",
+        "text": "int a 中a是变量吗？",
+        "raw_text": "‘a’对于ASCLL码表97；int a 中a是变量a?"
+      },
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G08",
+        "text": "不同的开发环境之间有什么区别？",
+        "raw_text": "不同的开发环境之间有什么区别？"
+      },
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G09",
+        "text": "一些数学常量如π、e等，怎么在C语言中表示？",
+        "raw_text": "一些数学常量如π，e等，怎么在C语言中表示？"
+      },
+      {
+        "gold_id": "自学报告-第1周-李致远组.docx-G10",
+        "text": "double跟float在C语言中有什么区别？",
+        "raw_text": "Double跟float在C语言中有什么区别？"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第2周-符丽组.docx(1).docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第2周-符丽组.docx(1).docx-G01",
+        "text": "转义字符\\n的前置使用",
+        "raw_text": "转义字符\\n的前置使用"
+      },
+      {
+        "gold_id": "自学报告-第2周-符丽组.docx(1).docx-G02",
+        "text": "各头文件及库函数的意义和用法",
+        "raw_text": "各头文件及库函数的意义和用法"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第2周-洪明暄组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第2周-洪明暄组.docx-G01",
+        "text": "对于getch()以及getche()函数的把握还不是很好",
+        "raw_text": "对于getch( )以及getche( )函数的把握还不是很好"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第3周-陈祯宇组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第3周-陈祯宇组.docx-G01",
+        "text": "如何从问题中提取并选择合适的循环结构？",
+        "raw_text": "如何从问题中提取并选择合适的循环结构"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第4周-温俊权组(X).docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第4周-温俊权组(X).docx-G01",
+        "text": "行下标和列下标的范围",
+        "raw_text": "行下标和列下标的范围"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第5章-刘思扬组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第5章-刘思扬组.docx-G01",
+        "text": "值传递与地址传递有什么根本性的不同？",
+        "raw_text": "值传递与地址传递有什么根本性的不同"
+      },
+      {
+        "gold_id": "自学报告-第5章-刘思扬组.docx-G02",
+        "text": "如果想让函数返回多个值该怎么做？",
+        "raw_text": "如果想让函数返回多个值该怎么做"
+      },
+      {
+        "gold_id": "自学报告-第5章-刘思扬组.docx-G03",
+        "text": "在写递归函数时，最需要注意的是什么？",
+        "raw_text": "在写递归函数时，最需要注意的是什么"
+      },
+      {
+        "gold_id": "自学报告-第5章-刘思扬组.docx-G04",
+        "text": "函数可以调用自己吗？",
+        "raw_text": "函数可以调用自己吗"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第八周-冯思琪组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第八周-冯思琪组.docx-G01",
+        "text": "不太理解多重for循环是如何进行的",
+        "raw_text": "不太理解多重for循环是如何进行的"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第二周-张一平组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第二周-张一平组.docx-G01",
+        "text": "遇到复杂概念（如指针），预习时卡壳要硬啃吗？",
+        "raw_text": "遇到复杂概念（如指针），预习时卡壳要硬啃吗？"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第三周-李易玲组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第三周-李易玲组.docx-G01",
+        "text": "for语句中，初始值设置放在里面和外面，效力一样吗？",
+        "raw_text": "for语句中，初始值设置初始值放在面和外面，效力一样吗"
+      },
+      {
+        "gold_id": "自学报告-第三周-李易玲组.docx-G02",
+        "text": "在写复杂程序时，对于什么时候开始循环，逻辑上有点想不通",
+        "raw_text": "在写复杂程序时，对于什么时候开始循环，逻辑上有点想不通"
+      },
+      {
+        "gold_id": "自学报告-第三周-李易玲组.docx-G03",
+        "text": "内嵌的循环语句逻辑上不太懂",
+        "raw_text": "内嵌的循环语句逻辑上不太懂"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第四周-洪菲菲组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第四周-洪菲菲组.docx-G01",
+        "text": "break和continue语句总是搞混",
+        "raw_text": "break和continue语句总是搞混"
+      },
+      {
+        "gold_id": "自学报告-第四周-洪菲菲组.docx-G02",
+        "text": "双重循环如何正确使用continue语句？",
+        "raw_text": "双重循环如何正确使用continue语句"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第四周-潘禹尧组(1).docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第四周-潘禹尧组(1).docx-G01",
+        "text": "用printf把数组数据写到文件文本时，如果数字之间不加空格，用scanf读取时能区分这是1、2、3还是123吗？",
+        "raw_text": "用printf把数组数据写到文件文本时 如果没在数字之间加空格，用scanf读取时，能区分这是1，2，3还是123吗"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第五章.docx",
+    "has_question": false,
+    "gold_items": []
+  },
+  {
+    "filename": "自学报告-第五周-XX组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第五周-XX组.docx-G01",
+        "text": "不懂函数的参数传递、主函数和子函数间的参数关系",
+        "raw_text": "不懂函数的参数传递、主函数和子函数间的参数关系。"
+      }
+    ]
+  },
+  {
+    "filename": "自学报告-第一章-熊琨组.docx",
+    "has_question": true,
+    "gold_items": [
+      {
+        "gold_id": "自学报告-第一章-熊琨组.docx-G01",
+        "text": "对于格式化输出函数printf()以及格式化输入函数scanf()存在疑惑",
+        "raw_text": "对于格式化输出函数printf()以及格式化输入函数scanf()存在疑惑"
+      },
+      {
+        "gold_id": "自学报告-第一章-熊琨组.docx-G02",
+        "text": "五个构造类型分别有什么作用？",
+        "raw_text": "五个构造类型分别有什么作用"
+      }
+    ]
+  }
+]

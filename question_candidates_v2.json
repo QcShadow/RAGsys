@@ -1,0 +1,22 @@
+[
+  {
+    "file": "F:\\pycode\\rag\\dataset\\report1\\自学报告-第1周-刘思扬组.docx",
+    "num_lines": 32,
+    "num_candidates": 1,
+    "candidates": [
+      {
+        "source_line_no": 25,
+        "sent_no": 0,
+        "text": "1.十六进制具体是如何表示的",
+        "triggers": [
+          "IN_Q_SECTION",
+          "MARKER:EXPLICIT",
+          "QWORD:如何"
+        ],
+        "in_q_section": true,
+        "context_prev": "自学心得或疑问",
+        "context_next": "自学照片（截图）"
+      }
+    ]
+  }
+]

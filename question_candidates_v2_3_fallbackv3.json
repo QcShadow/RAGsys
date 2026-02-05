@@ -1,0 +1,490 @@
+[
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第1周-XX组.docx",
+    "num_lines": 10,
+    "num_candidates": 1,
+    "candidates": [
+      {
+        "source_line_no": 3,
+        "sent_no": 1,
+        "text": "对第二章的理解比较难，还有对二进制、十进制、八进制、十六进制的换算不懂",
+        "triggers": [
+          "ALLOW:CONFUSE_WITH_SIGNAL",
+          "CONFUSE:不懂",
+          "IN_Q_SECTION"
+        ],
+        "in_q_section": true,
+        "context_prev": "自学心得或疑问",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第1周-李致远组.docx",
+    "num_lines": 19,
+    "num_candidates": 8,
+    "candidates": [
+      {
+        "source_line_no": 3,
+        "sent_no": 1,
+        "text": "不清楚头文件以及部分函数和符号的用法及含义",
+        "triggers": [
+          "ALLOW:CONFUSE_WITH_SIGNAL",
+          "CONFUSE:不清楚",
+          "IN_Q_SECTION",
+          "WEAK_HINT"
+        ],
+        "in_q_section": true,
+        "context_prev": "自学心得或疑问",
+        "context_next": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+        "llm": null
+      },
+      {
+        "source_line_no": 4,
+        "sent_no": 0,
+        "text": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+        "triggers": [
+          "CONFUSE:不了解",
+          "HAS_QUESTION_MARK",
+          "IN_Q_SECTION",
+          "QWORD:是什么"
+        ],
+        "in_q_section": true,
+        "context_prev": "肖良哲：建立了基础认知以及学会了核心框架，并且理解相应流程；不清楚头文件以及部分函数和符号的用法及含义",
+        "context_next": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+        "llm": null
+      },
+      {
+        "source_line_no": 5,
+        "sent_no": 0,
+        "text": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+        "triggers": [
+          "CONFUSE:不知道",
+          "IN_Q_SECTION",
+          "QWORD:是什么",
+          "WEAK_HINT"
+        ],
+        "in_q_section": true,
+        "context_prev": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+        "context_next": "printf括号中的“%d”作用是什么",
+        "llm": null
+      },
+      {
+        "source_line_no": 6,
+        "sent_no": 0,
+        "text": "printf括号中的“%d”作用是什么",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:作用",
+          "WEAK_HINT"
+        ],
+        "in_q_section": true,
+        "context_prev": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+        "context_next": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+        "llm": null
+      },
+      {
+        "source_line_no": 7,
+        "sent_no": 1,
+        "text": "int a 中a是变量a？",
+        "triggers": [
+          "HAS_QUESTION_MARK",
+          "IN_Q_SECTION"
+        ],
+        "in_q_section": true,
+        "context_prev": "printf括号中的“%d”作用是什么",
+        "context_next": "张兆涵：不同的开发环境之间有什么区别？一些数学常量如π，e等，怎么在C语言中表示？Double跟float在C语言中有什么区别？",
+        "llm": null
+      },
+      {
+        "source_line_no": 8,
+        "sent_no": 0,
+        "text": "张兆涵：不同的开发环境之间有什么区别？",
+        "triggers": [
+          "HAS_QUESTION_MARK",
+          "IN_Q_SECTION",
+          "QWORD:区别"
+        ],
+        "in_q_section": true,
+        "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      },
+      {
+        "source_line_no": 8,
+        "sent_no": 1,
+        "text": "一些数学常量如π，e等，怎么在C语言中表示？",
+        "triggers": [
+          "HAS_QUESTION_MARK",
+          "IN_Q_SECTION",
+          "QWORD:怎么",
+          "WEAK_HINT"
+        ],
+        "in_q_section": true,
+        "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      },
+      {
+        "source_line_no": 8,
+        "sent_no": 2,
+        "text": "Double跟float在C语言中有什么区别？",
+        "triggers": [
+          "HAS_QUESTION_MARK",
+          "IN_Q_SECTION",
+          "QWORD:区别"
+        ],
+        "in_q_section": true,
+        "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第2周-洪明暄组.docx",
+    "num_lines": 61,
+    "num_candidates": 1,
+    "candidates": [
+      {
+        "source_line_no": 53,
+        "sent_no": 0,
+        "text": "对于getch()以及getche()函数的把握还不是很好",
+        "triggers": [
+          "LLM_FALLBACK_STRICT"
+        ],
+        "in_q_section": false,
+        "context_prev": "总体把握到选择结构的知识点以及其运行逻辑。",
+        "context_next": "对于C语言的学习内容有了更加深刻的印象。",
+        "llm": {
+          "category": "CONFUSION",
+          "rationale": "包含“把握还不是很好”的困惑表达，且指向具体函数“getch()和getche()”",
+          "evidence": "对于getch( )以及getche( )函数的把握还不是很好",
+          "confidence": 0.9
+        }
+      }
+    ],
+    "fallback_used": true
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第2周-符丽组.docx(1).docx",
+    "num_lines": 17,
+    "num_candidates": 1,
+    "candidates": [
+      {
+        "source_line_no": 9,
+        "sent_no": 0,
+        "text": "1.转义字符\\n的前置使用",
+        "triggers": [
+          "IN_Q_SECTION",
+          "MARKER:EXPLICIT"
+        ],
+        "in_q_section": true,
+        "context_prev": "3.if和switch语句的应用使分支结构问题的解决更加方便了，需要多加练习和应用达到熟练的效果",
+        "context_next": "2.各头文件及库函数的意义和用法",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第3周-陈祯宇组.docx",
+    "num_lines": 11,
+    "num_candidates": 1,
+    "candidates": [
+      {
+        "source_line_no": 4,
+        "sent_no": 0,
+        "text": "如何从问题中提取并选择合适的循环结构",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:如何"
+        ],
+        "in_q_section": true,
+        "context_prev": "自学心得或疑问",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第4周-温俊权组(X).docx",
+    "num_lines": 10,
+    "num_candidates": 0,
+    "candidates": [],
+    "fallback_used": true
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第5章-刘思扬组.docx",
+    "num_lines": 21,
+    "num_candidates": 4,
+    "candidates": [
+      {
+        "source_line_no": 11,
+        "sent_no": 0,
+        "text": "1.值传递与地址传递有什么根本性的不同？",
+        "triggers": [
+          "HAS_QUESTION_MARK",
+          "IN_Q_SECTION",
+          "MARKER:EXPLICIT",
+          "QWORD:什么"
+        ],
+        "in_q_section": true,
+        "context_prev": "二、自学心得或疑问",
+        "context_next": "2.如果想让函数返回多个值该怎么做",
+        "llm": null
+      },
+      {
+        "source_line_no": 12,
+        "sent_no": 0,
+        "text": "如果想让函数返回多个值该怎么做",
+        "triggers": [
+          "IN_Q_SECTION",
+          "MARKER:CONT",
+          "QWORD:怎么"
+        ],
+        "in_q_section": true,
+        "context_prev": "疑问：1.值传递与地址传递有什么根本性的不同",
+        "context_next": "3.在写递归函数时，最需要注意的是什么",
+        "llm": null
+      },
+      {
+        "source_line_no": 13,
+        "sent_no": 0,
+        "text": "在写递归函数时，最需要注意的是什么",
+        "triggers": [
+          "IN_Q_SECTION",
+          "MARKER:CONT",
+          "QWORD:是什么"
+        ],
+        "in_q_section": true,
+        "context_prev": "2.如果想让函数返回多个值该怎么做",
+        "context_next": "4.函数可以调用自己吗",
+        "llm": null
+      },
+      {
+        "source_line_no": 14,
+        "sent_no": 0,
+        "text": "函数可以调用自己吗",
+        "triggers": [
+          "IN_Q_SECTION",
+          "MARKER:CONT",
+          "QWORD:吗"
+        ],
+        "in_q_section": true,
+        "context_prev": "3.在写递归函数时，最需要注意的是什么",
+        "context_next": "三、自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第一章-熊琨组.docx",
+    "num_lines": 15,
+    "num_candidates": 2,
+    "candidates": [
+      {
+        "source_line_no": 7,
+        "sent_no": 0,
+        "text": "对于格式化输出函数printf()以及格式化输入函数scanf()存在疑惑",
+        "triggers": [
+          "ALLOW:CONFUSE_WITH_SIGNAL",
+          "CONFUSE:疑惑",
+          "IN_Q_SECTION"
+        ],
+        "in_q_section": true,
+        "context_prev": "自学心得或疑问",
+        "context_next": "五个构造类型分别有什么作用",
+        "llm": null
+      },
+      {
+        "source_line_no": 8,
+        "sent_no": 0,
+        "text": "五个构造类型分别有什么作用",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:作用",
+          "WEAK_HINT"
+        ],
+        "in_q_section": true,
+        "context_prev": "对于格式化输出函数printf()以及格式化输入函数scanf()存在疑惑",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第三周-李易玲组.docx",
+    "num_lines": 11,
+    "num_candidates": 2,
+    "candidates": [
+      {
+        "source_line_no": 4,
+        "sent_no": 0,
+        "text": "for语句中，初始值设置初始值放在面和外面，效力一样吗。",
+        "triggers": [
+          "IN_Q_SECTION",
+          "MARKER:EXPLICIT",
+          "QWORD:吗"
+        ],
+        "in_q_section": true,
+        "context_prev": "心得：明白了，当需要一段语句重复执行时，需要使用循环语句，更丰富了自己的知识面，了解了编程的逻辑。",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      },
+      {
+        "source_line_no": 4,
+        "sent_no": 1,
+        "text": "在写复杂程序时，对于什么时候开始循环，逻辑上有点想不通，内嵌的循环语句逻辑上不太懂。？",
+        "triggers": [
+          "CONFUSE:不太懂",
+          "HAS_QUESTION_MARK",
+          "IN_Q_SECTION",
+          "MARKER:EXPLICIT",
+          "QWORD:什么时候"
+        ],
+        "in_q_section": true,
+        "context_prev": "心得：明白了，当需要一段语句重复执行时，需要使用循环语句，更丰富了自己的知识面，了解了编程的逻辑。",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第二周-张一平组.docx",
+    "num_lines": 16,
+    "num_candidates": 1,
+    "candidates": [
+      {
+        "source_line_no": 9,
+        "sent_no": 0,
+        "text": "1. 遇到复杂概念（如指针），预习时卡壳要硬啃吗？",
+        "triggers": [
+          "CONFUSE:卡壳",
+          "HAS_QUESTION_MARK",
+          "IN_Q_SECTION",
+          "QWORD:吗"
+        ],
+        "in_q_section": true,
+        "context_prev": "疑问：",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第五周-XX组.docx",
+    "num_lines": 10,
+    "num_candidates": 1,
+    "candidates": [
+      {
+        "source_line_no": 3,
+        "sent_no": 0,
+        "text": "不懂函数的参数传递、主函数和子函数间的参数关系。",
+        "triggers": [
+          "ALLOW:CONFUSE_WITH_SIGNAL",
+          "CONFUSE:不懂",
+          "IN_Q_SECTION"
+        ],
+        "in_q_section": true,
+        "context_prev": "自学心得或疑问",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第五章.docx",
+    "num_lines": 10,
+    "num_candidates": 0,
+    "candidates": [],
+    "fallback_used": true
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第八周-冯思琪组.docx",
+    "num_lines": 10,
+    "num_candidates": 1,
+    "candidates": [
+      {
+        "source_line_no": 3,
+        "sent_no": 0,
+        "text": "不太理解多重for循环是如何进行的。",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:如何"
+        ],
+        "in_q_section": true,
+        "context_prev": "自学心得或疑问",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第四周-洪菲菲组.docx",
+    "num_lines": 18,
+    "num_candidates": 2,
+    "candidates": [
+      {
+        "source_line_no": 10,
+        "sent_no": 0,
+        "text": "break和continue语句总是搞混",
+        "triggers": [
+          "ALLOW:CONFUSE_WITH_SIGNAL",
+          "CONFUSE:搞混",
+          "IN_Q_SECTION"
+        ],
+        "in_q_section": true,
+        "context_prev": "疑问",
+        "context_next": "双重循环如何正确使用continue语句",
+        "llm": null
+      },
+      {
+        "source_line_no": 11,
+        "sent_no": 0,
+        "text": "双重循环如何正确使用continue语句",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:如何"
+        ],
+        "in_q_section": true,
+        "context_prev": "break和continue语句总是搞混",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  },
+  {
+    "file": "F:\\pycode\\rag\\norm_dataset\\自学报告-第四周-潘禹尧组(1).docx",
+    "num_lines": 18,
+    "num_candidates": 1,
+    "candidates": [
+      {
+        "source_line_no": 11,
+        "sent_no": 0,
+        "text": "用printf把数组数据写到文件文本时 如果没在数字之间加空格，用scanf读取时，能区分这是1，2，3还是123吗",
+        "triggers": [
+          "IN_Q_SECTION",
+          "MARKER:EXPLICIT",
+          "QWORD:吗"
+        ],
+        "in_q_section": true,
+        "context_prev": "心得 ：一定要搞清楚字符数组与字符串的区别 写char str[3]=“abc”是错误的 因为没有给\\0留储存空间",
+        "context_next": "自学照片（截图）",
+        "llm": null
+      }
+    ],
+    "fallback_used": false
+  }
+]

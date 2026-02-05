@@ -1,0 +1,82 @@
+[
+  {
+    "file": "F:\\pycode\\rag\\dataset\\report1\\自学报告-第1周-李致远组.docx",
+    "num_lines": 19,
+    "num_candidates": 6,
+    "candidates": [
+      {
+        "source_line_no": 4,
+        "sent_no": 0,
+        "text": "陈星雨：对于一些概念不了解，如：ASCLL码是什么",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:是什么"
+        ],
+        "in_q_section": true,
+        "context_prev": "肖良哲：建立了基础认知以及学会了核心框架，并且理解相应流程；不清楚头文件以及部分函数和符号的用法及含义",
+        "context_next": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么"
+      },
+      {
+        "source_line_no": 5,
+        "sent_no": 0,
+        "text": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+        "triggers": [
+          "CONFUSE:不知道",
+          "IN_Q_SECTION",
+          "QWORD:是什么"
+        ],
+        "in_q_section": true,
+        "context_prev": "陈星雨：对于一些概念不了解，如：ASCLL码是什么？",
+        "context_next": "printf括号中的“%d”作用是什么"
+      },
+      {
+        "source_line_no": 6,
+        "sent_no": 0,
+        "text": "printf括号中的“%d”作用是什么",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:作用"
+        ],
+        "in_q_section": true,
+        "context_prev": "李致远：不知道ASCLL码表，转义字符的含义不明确 \\t 制表位置是什么",
+        "context_next": "‘a’对于ASCLL码表97；int a 中a是变量a?"
+      },
+      {
+        "source_line_no": 8,
+        "sent_no": 0,
+        "text": "张兆涵：不同的开发环境之间有什么区别",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:区别"
+        ],
+        "in_q_section": true,
+        "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+        "context_next": "自学照片（截图）"
+      },
+      {
+        "source_line_no": 8,
+        "sent_no": 1,
+        "text": "一些数学常量如π，e等，怎么在C语言中表示",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:怎么"
+        ],
+        "in_q_section": true,
+        "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+        "context_next": "自学照片（截图）"
+      },
+      {
+        "source_line_no": 8,
+        "sent_no": 2,
+        "text": "Double跟float在C语言中有什么区别",
+        "triggers": [
+          "IN_Q_SECTION",
+          "QWORD:区别"
+        ],
+        "in_q_section": true,
+        "context_prev": "‘a’对于ASCLL码表97；int a 中a是变量a?",
+        "context_next": "自学照片（截图）"
+      }
+    ]
+  }
+]
